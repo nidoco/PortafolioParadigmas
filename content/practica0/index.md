@@ -1,6 +1,6 @@
 +++
 date = '2025-02-21T10:18:14-08:00'
-draft = false
+draft = true
 title = 'Practica 0: Markdown, Git & Hugo'
 +++
 # Primera sesión
@@ -147,4 +147,37 @@ Para las menciones, puedes usar el símbolo @ seguido de un nombre de usuario pa
 
 # Segunda sesión 
 ## Uso de Git y GitHub. Añadir al reporte que es Git y Github, como se utiliza, comandos escenciales para usar Git y subir la información a Github, como crear un repositorio y suben su información a la nube.
+**Git** es un sistema de control de versiones distribuido que permite a los desarrolladores gestionar y rastrear cambios en el código fuente de manera eficiente. Fue creado por Linus Torvalds en 2005 y es ampliamente utilizado en la industria del software para la colaboración en proyectos de desarrollo. **GitHub** es una plataforma en línea que permite alojar repositorios Git y facilita la colaboración entre desarrolladores. Ofrece herramientas para el control de versiones, gestión de proyectos y automatización de tareas mediante integraciones con otros servicios.
 
+**Comandos esenciales de Git:**
+
+**git init:** Inicializa un repositorio Git en un directorio.
+
+**git clone** URL_DEL_REPOSITORIO: Clona un repositorio existente desde una URL.
+
+**git status:** Muestra el estado de los archivos en el repositorio.
+
+**git add** nombre_archivo: Agrega un archivo específico al área de preparación.
+
+**git add .:** Agrega todos los archivos modificados al área de preparación.
+
+**git commit -m** "Mensaje descriptivo del cambio": Guarda los cambios en el historial con un mensaje descriptivo.
+
+**git log:** Muestra el historial de cambios en el repositorio.
+
+**git pull origin main:** Actualiza el repositorio local con los cambios remotos.
+
+**git push origin main:** Envía los cambios confirmados al repositorio remoto.
+
+![michi](image.png)
+---
+## Tercera sesión
+### Combinar los conocimientos de Markdown y Git para generar páginas estáticas con Hugo y GitHub Actions. Añadir al reporte que es Hugo y Github Actions, como crear un sitio estático en hugo, como suben esta información a Github, como configurar Github Actions para publicar el sitio en Github Pages.
+
+En esta sesión, aprendimos a utilizar Hugo para la creación de nuestra página web, empleando el tema Ananke. En este sitio, publicaremos todas nuestras prácticas y reportes. Para optimizar su gestión, implementamos GitHub Actions, lo que nos permite automatizar el proceso y realizar un seguimiento de las diferentes versiones de la página.
+
+![Hugo.io](image-1.png)
+
+### Enlaces 
+[Mi repositorio](https://github.com/nidoco/PortafolioParadigmas)
+[Pagina estatica]( )

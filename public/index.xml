@@ -6,6 +6,35 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 21 Feb 2025 10:19:46 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Practica3</title>
+      <link>http://localhost:1313/practica3/</link>
+      <pubDate>Fri, 21 Feb 2025 10:19:46 -0800</pubDate>
+      <guid>http://localhost:1313/practica3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practica2</title>
+      <link>http://localhost:1313/practica2/</link>
+      <pubDate>Fri, 21 Feb 2025 10:19:41 -0800</pubDate>
+      <guid>http://localhost:1313/practica2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practica1</title>
+      <link>http://localhost:1313/practica1/</link>
+      <pubDate>Fri, 21 Feb 2025 10:19:37 -0800</pubDate>
+      <guid>http://localhost:1313/practica1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practica 0: Markdown, Git &amp; Hugo</title>
+      <link>http://localhost:1313/practica0/</link>
+      <pubDate>Fri, 21 Feb 2025 10:18:14 -0800</pubDate>
+      <guid>http://localhost:1313/practica0/</guid>
+      <description>&lt;h1 id=&#34;primera-sesión&#34;&gt;Primera sesión&lt;/h1&gt;&#xA;&lt;h2 id=&#34;sintaxis-y-usode-markdown-crear-un-reporte-de-qué-es-markdown-cómo-se-utiliza-y-su-sintaxis&#34;&gt;Sintaxis y usode markdown. Crear un reporte de qué es Markdown, cómo se utiliza y su sintaxis&lt;/h2&gt;&#xA;&lt;h2 id=&#34;introducción&#34;&gt;Introducción&lt;/h2&gt;&#xA;&lt;p&gt;En esta primera sesión se hizo una breve introducción a Markdown. Aquí, se presentan los diferentes elementos que se pueden utilizar en Markdown, junto con una breve explicación de su propósito y uso.&lt;/p&gt;&#xA;&lt;p&gt;Los encabezados se utilizan para crear títulos de diferentes niveles. Los encabezados varían según el número de #. Por ejemplo, # es el encabezado más grande, y ##### es el más pequeño.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
