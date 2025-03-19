@@ -1,14 +1,13 @@
 +++
 date = '2025-02-21T10:18:14-08:00'
-draft = true
+draft = false
 title = 'Practica 0: Markdown, Git & Hugo'
+summary = "Jennifer"
 +++
 # Primera sesión
 ## Sintaxis y usode markdown. Crear un reporte de qué es Markdown, cómo se utiliza y su sintaxis
 ## Introducción
 En esta primera sesión se hizo una breve introducción a Markdown. Aquí, se presentan los diferentes elementos que se pueden utilizar en Markdown, junto con una breve explicación de su propósito y uso.
-
-que pasa pa
 <!-- Esto es un comentario -->
 Los encabezados se utilizan para crear títulos de diferentes niveles. Los encabezados varían según el número de #. Por ejemplo, # es el encabezado más grande, y ##### es el más pequeño.
 # Encabezado 1
