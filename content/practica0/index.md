@@ -8,6 +8,7 @@ title = 'Practica 0: Markdown, Git & Hugo'
 ## Introducción
 En esta primera sesión se hizo una breve introducción a Markdown. Aquí, se presentan los diferentes elementos que se pueden utilizar en Markdown, junto con una breve explicación de su propósito y uso.
 
+que pasa pa
 <!-- Esto es un comentario -->
 Los encabezados se utilizan para crear títulos de diferentes niveles. Los encabezados varían según el número de #. Por ejemplo, # es el encabezado más grande, y ##### es el más pequeño.
 # Encabezado 1
