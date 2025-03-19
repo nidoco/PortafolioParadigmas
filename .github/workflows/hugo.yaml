@@ -62,8 +62,8 @@ jobs:
           restore-keys:
             hugo-
       - name: Build with Hugo
-        run:
-          cd docs |
+        run: |
+          cd docs 
           hugo \
             --gc \
             --minify \
