@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://nidoco.github.io/PortafolioParadigmas/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Sitio de Jennifer para portafolio PP'
 theme = 'ananke'
 [params]
-    showSummary = 'true'
+    showSummary = false

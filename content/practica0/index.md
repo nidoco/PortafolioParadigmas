@@ -2,7 +2,7 @@
 date = '2025-02-21T10:18:14-08:00'
 draft = false
 title = 'Practica 0: Markdown, Git & Hugo'
-summary = "Jennifer"
+summary = "Jennifer Salgado Pacheco'
 +++
 # Primera sesión
 ## Sintaxis y usode markdown. Crear un reporte de qué es Markdown, cómo se utiliza y su sintaxis
