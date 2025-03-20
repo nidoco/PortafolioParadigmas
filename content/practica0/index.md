@@ -181,4 +181,4 @@ En esta sesión, aprendimos a utilizar Hugo para la creación de nuestra página
 
 ### Enlaces 
 [Mi repositorio](https://github.com/nidoco/PortafolioParadigmas)
-[Pagina estatica]( )
+[Pagina estatica](https://nidoco.github.io/PortafolioParadigmas/)
