@@ -348,6 +348,9 @@ El funcionamiento del programa sigue este flujo:
    - Al elegir "Guardar y salir", asegura la última versión en disco
    - Todos los cambios quedan persistentes para la próxima ejecución
 
+### Visualización
+![alt text](visualizacion.png)
+
 El sistema mantiene consistencia entre:
 - Objetos en memoria
 - Archivos JSON (backup)
@@ -355,3 +358,4 @@ El sistema mantiene consistencia entre:
 
 Permitiendo gestión completa sin pérdida de datos.
 
+Repositorio: https://github.com/nidoco/PortafolioParadigmas/tree/master/content/practica2
