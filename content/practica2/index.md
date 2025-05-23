@@ -1,3 +1,9 @@
++++
+date = '2025-02-21T10:19:41-08:00'
+draft = false
+title = 'Practica 2'
+summary = "Jennifer Salgado Pacheco"
++++
 # Práctica 2
 ## Paradigmas de programación
 El objetivo de esta práctica es explicar de manera detallada cómo funciona el programa.

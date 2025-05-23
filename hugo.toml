@@ -1,6 +1,6 @@
 baseURL = 'https://nidoco.github.io/PortafolioParadigmas/'
 languageCode = 'en-us'
-title = 'Sitio de Jennifer para portafolio PP'
+title = 'Portafolio Paradigmas'
 theme = 'ananke'
 [params]
     showSummary = false
