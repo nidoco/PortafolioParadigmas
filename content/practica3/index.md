@@ -2,9 +2,10 @@
 date = '2025-02-21T10:19:46-08:00'
 draft = false
 title = 'Practica 3: Aplicación TODO en Haskell'
+summary = "Jennifer Salgado Pacheco"
 +++
-# Paradigmas de la Programación
-## Práctica 3
+# Práctica 3
+## Paradigmas de Programación
 
 ## Introducción
 En este informe de práctica se detallará el proceso de creación de una aplicación de consola destinada a la gestión de listas de tareas (TODO list), desarrollada con el lenguaje de programación funcional **Haskell**. El propósito central fue adquirir conocimientos y familiarizarse con los principios básicos de Haskell, su sintaxis, el manejo de operaciones de entrada y salida, la manipulación de listas y el uso de herramientas como **Stack**. Esta actividad se llevó a cabo mediante la adaptación y el análisis de tutoriales y ejemplos existentes, con el fin de construir la aplicación de manera progresiva.
