@@ -1,39 +1,6 @@
 baseURL = 'https://nidoco.github.io/PortafolioParadigmas/'
 languageCode = 'en-us'
 title = 'Portafolio Paradigmas'
-theme = "blonde"
-
-[build]
-  publishDir = "docs"  # ⚠️ Importante para GitHub Pages
-
+theme = 'ananke'
 [params]
-  showSummary = false
-  description = "Mi portafolio de paradigmas de programación"
-  author = "Tu Nombre"
-  defaultTheme = "light"  # "dark" para modo oscuro predeterminado
-
-  # Configuración específica del tema Blonde
-  [params.blonde]
-    primaryColor = "#3B82F6"   # Color azul Tailwind
-    secondaryColor = "#10B981" # Color verde Tailwind
-    showSearch = true
-    showCategories = true
-    showTags = true
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true  # Permite HTML en Markdown
-
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Inicio"
-    url = "/"
-    weight = 1
-  
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/posts/"
-    weight = 2
+    showSummary = false
