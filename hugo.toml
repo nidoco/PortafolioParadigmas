@@ -1,6 +1,6 @@
 baseURL = 'https://nidoco.github.io/PortafolioParadigmas/'
 languageCode = 'en-us'
 title = 'Portafolio Paradigmas'
-theme = 'ananke'
+theme = 'neopost'
 [params]
-    showSummary = false
+    theme: "light-purple"
