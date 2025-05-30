@@ -3,6 +3,7 @@ languageCode = 'es-es'
 title = 'Portafolio Paradigmas'
 theme = "neopost"
 
+
 [permalinks]
     posts = "/:slug/"
 
