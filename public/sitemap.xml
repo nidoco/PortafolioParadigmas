@@ -3,13 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-21T10:19:46-08:00</lastmod>
+    <lastmod>2025-03-30T10:19:41-08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/practica0/</loc>
-    <lastmod>2025-02-21T10:18:14-08:00</lastmod>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-03-30T10:19:41-08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/pr%C3%A1ctica-2-an%C3%A1lisis-de-c%C3%B3digo/</loc>
+    <lastmod>2025-03-30T10:19:41-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pr%C3%A1ctica-4-paradigma-l%C3%B3gico/</loc>
+    <lastmod>2025-03-30T10:19:41-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/prolog/</loc>
+    <lastmod>2025-03-30T10:19:41-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2025-03-30T10:19:41-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-03-30T10:19:41-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/git-y-hugo/</loc>
+    <lastmod>2025-03-11T08:44:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/markdown/</loc>
+    <lastmod>2025-03-11T08:44:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pr%C3%A1ctica-0-markdown-git-y-hugo/</loc>
+    <lastmod>2025-03-11T08:44:00-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/haskell/</loc>
+    <lastmod>2025-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pr%C3%A1ctica-3-aplicaci%C3%B3n-todo-en-haskell/</loc>
+    <lastmod>2025-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/practica1/</loc>
+    <lastmod>2025-02-21T10:19:37-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

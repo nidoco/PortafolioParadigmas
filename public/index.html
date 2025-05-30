@@ -1,149 +1,1910 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.145.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Portafolio Paradigmas</title>
+    <link rel="canonical" href="http://localhost:1313/">
+    
+    
+    <link rel="icon" href="/favicon.ico">
+    
+    
+    <meta name="description" content="Mis Prácticas
+
+Práctica 0
+Práctica 1
+Práctica 2
+Práctica 3
+Práctica 4
+">
+    
+    
+    
+    <style>
+
+
+
+:root {
+    --site-bg: url("/flowertile.png");
+    --accent-color: #f55cc0;
+    --select-color: #ffc1e9;
+    --link-color: #5083C1;
+    --bg-color: #CEEAFF;
+    --text-color: #191919;
+    --bg-color2: white;
+    --border-color: #215697;
+    --special-text-color: #215697;
+    --post-header-color: white;
+    --post-shadow-color: #21569760;
+    --outline-color: #6EAAD6;
+    --outline-color2: #CEEAFF;
+    --list-style-type: "";
+    --list-style-image: url("/flower.png");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@-moz-document url-prefix() {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent-color) #00000000;
+    }
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    -webkit-border-radius: .3rem;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+
+::selection {
+    background: var(--select-color);
+    color: var(--border-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: var(--site-bg);
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+p {line-height: 1.5em;}
+
+h1 {
+    font-size: 1.5em;
+    color: var(--post-header-color);
+    filter: drop-shadow(2px 0 0 var(--outline-color)) drop-shadow(0 2px 0 var(--outline-color)) drop-shadow(-2px 0 0 var(--outline-color)) drop-shadow(0 -2px 0 var(--outline-color))drop-shadow(0 1px 1px var(--outline-color2)) drop-shadow(1px 0 1px var(--outline-color2));
+}
+
+h4,
+h5,
+h6 {color: var(--special-text-color);}
+
+header {
+    background-size: 100%;
+    background-position: center;
+    min-height: 80px;
+    margin: 0 0;
+    align-content: center;
+}
+
+header > h1 {
+    background-color: var(--bg-color2);
+    color: var(--special-text-color);
+    margin: 0 auto;
+    font-size: 2em;
+ 
+     
+    max-width: 600px;
+    padding: 6px 12px;
+    border-radius: 1em;
+    border: 4px double var(--outline-color);
+    filter: none;
+    text-align: center;
+}
+
+ul.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+li.page-item {
+    list-style: none;
+}
+
+li.page-item a{
+    display: inline-flex;
+    font-size: 1rem;
+    margin: .2rem;
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+    padding: 1em;
+    border: 2px solid var(--border-color);
+    border-radius: .3em;
+    margin-bottom: 1em;
+    box-shadow: var(--post-shadow-color) 5px 5px;
+
+    text-decoration: none;
+    user-select: none;
+}
+
+li.page-item.active a{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+li.page-item.disabled a{
+    cursor: not-allowed;
+}
+
+li.page-item:not(.disabled):not(.active) a:hover{
+    background-color: var(--select-color);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+li {
+    
+        list-style-image: var(--list-style-image);
+    
+}
+
+nav {margin: 1em;}
+
+nav.links > ul {
+    max-width: 960px;
+    margin: auto;
+    line-height: 3rem;
+    list-style-type: none;
+    padding-left: 0;
+    justify-content: space-evenly;
+}
+
+nav.links li {
+    text-align: center;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+nav.links li > a {
+    font-weight: bold;
+    background-color: var(--bg-color);
+    border: 4px double var(--outline-color);
+    padding: .5em 3em;
+    text-decoration: none;
+}
+
+nav.links li > a:visited {color: var(--link-color);}
+nav.links li > a:hover {
+    color: var(--accent-color);
+    background-color: var(--select-color);
+}
+
+nav.languages {
+    margin: .3em;
+    text-align: center;
+}
+
+
+nav.languages ul {
+    display: inline-block;
+}
+
+nav.languages ul li {
+    display: inline-block;
+}
+
+a {
+    color: var(--link-color);
+    border-radius: .3em;
+    transition: .2s ease-out;
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transition: .2s ease;
+}
+
+#sidebar {
+    background-color: var(--bg-color2);
+    color: var(--special-text-color);
+    height: fit-content;
+    min-width: 320px;
+    margin-top: 1em;
+    margin-right: 2em;
+    border-radius: .5em;
+}
+
+.small-box {
+    max-width: 240px;
+    margin: auto;
+    border: 2px solid var(--bg-color);
+    font-size: 11px;
+    line-height: 1.5rem;
+}
+
+#avatar {
+    margin: .5em;
+    max-width: 320px;
+}
+
+ 
+.flower {
+    width: 300px; 
+    aspect-ratio: 1;
+    
+    
+        border-radius: 50%;
+    
+    
+}
+
+#bio {
+    margin: 20px;
+    padding: .2em;
+    background: var(--bg-color);
+    border: 4px double var(--bg-color2);
+    border-radius: 2em;
+    font-size: small;
+}
+
+#bio p { margin: 1em; }
+
+#content {
+    display: flex;
+    max-width: 960px;
+    margin: auto;
+}
+
+main {
+    padding: 1em;
+    padding-top: 0;
+}
+
+#top {
+    background-color: var(--bg-color);
+}
+
+#top section {
+    background-color: var(--bg-color2);
+    border-radius: .5em;
+    margin-bottom: 10px;
+    padding: .5em 1em;
+    width: 100%;
+}
+
+article {
+    background-color: var(--bg-color2);
+    padding: 1em;
+    border: 2px solid var(--border-color);
+    border-radius: .3em;
+    margin-bottom: 1em;
+    box-shadow: var(--post-shadow-color) 5px 5px;
+}
+article img {
+    max-width: 100%;
+}
+
+.readmore summary {
+    font-weight: bold;
+    color: var(--special-text-color);
+    list-style: none;
+    cursor: pointer;
+}
+
+header h1 a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--special-text-color);
+}
+
+header h1 a:visited {
+    color: inherit;
+}
+
+header h1 a:hover {
+    color: inherit;
+}
+
+.readmore div {
+    display: inline;
+}
+
+.readmore div p {
+    display: inline;
+}
+
+.readmore summary::-webkit-details-marker {
+  display: none;
+}
+
+.readmore[open] > summary {
+    border-bottom: 2px dashed var(--bg-color);
+    padding-bottom: .6em;
+    margin-bottom: .6em;
+}
+
+.post-header {
+    color: var(--special-text-color);
+    font-weight: bold;
+    padding: .5rem 0;
+    border-bottom: 4px double var(--outline-color);
+}
+
+.timestamp {
+    font-weight: normal;
+    font-size: smaller;
+    margin: .2em;
+    float: right;
+}
+
+.tag-item p {
+    font-size: smaller;
+}
+
+.photosetx2,
+.photosetx3 {
+    display: grid;
+    gap: 4px;
+    align-items: center;
+}
+
+.photosetx2 {grid-template-columns: 1fr 1fr;}
+.photosetx3 {grid-template-columns: 1fr 1fr 1fr;}
+
+.cropped {
+    width: 156px;
+    height: 156px;
+    overflow: hidden;
+    object-position: 25% 25%;
+}
+.photosetx2 img,
+.photosetx3 img {object-fit: cover;}
+
+.center { text-align: center; }
+
+.img-right {
+    max-width: 7.5em;
+    max-height: 7.5em;
+    float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.small-text {
+    font-size: 11px;
+    text-shadow: var(--bg-color) 1px 1px;
+}
+
+.dropbox-btn {
+    color: var(--link-color);
+    font-weight: bold;
+    background-color: var(--bg-color);
+     
+    border: 1px solid var(--outline-color);
+     
+    text-decoration: none;
+}
+
+.dropbox-content[visible] {
+    display: block;
+}
+
+.dropbox-content {
+    display: none;
+    position: absolute;
+    z-index: 1
+}
+
+.table-of-contents {
+    background-color: var(--bg-color2);
+    padding: .3em;
+    border: 2px solid var(--border-color);
+    border-radius: .3em;
+    box-shadow: var(--post-shadow-color) 5px 5px;
+}
+
+.table-of-contents.sidebar {
+    position: sticky;
+    top: 1rem;
+    height: fit-content;
+    width: 10rem;
+    flex-shrink: 0;
+    max-height: calc(100vh - 2rem);
+    overflow-x: auto;
+}
+
+.table-of-contents.float {
+    width: max-content;
+    max-width: 50vw;
+    max-height: 50%;
+    overflow: auto;
+}
+
+.table-of-contents nav {
+    margin: 0 .5em;
+}
+
+.table-of-contents nav ul {
+    margin: .5em 1em;
+    padding: 0;
+}
+
+.table-of-contents nav li {
+    margin: .3em 0;
+}
+
+#single-post {
+    display: flex;
+    gap: 1rem;
+}
+
+#single-post > article {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#single-post > article > #post-toc-mobile {
+    display: none;
+}
+
+ 
+@media only screen and (max-width: 800px) {
+    #content {
+        flex-wrap: wrap;
+    }
+    #sidebar {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 1em;
+        border-radius: .3em;
+    }
+    header {min-height: 110px;}
+    header > h1 { 
+        width: fit-content;
+        padding: .3em 1em;
+    }
+    nav.links > ul {
+     
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #bio {width: 50%;}
+    
+    #sidebar ul {
+        line-height: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    #sidebar li {
+        margin: .3em 1em;
+    }
+
+    #single-post > .table-of-contents.sidebar {
+        display: none;
+    }
+
+    #single-post > article > #post-toc-mobile {
+        display: inline;
+    }
+}
+</style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>My New Hugo Site</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="">
-    <meta name="generator" content="Hugo 0.145.0">
+</head>
+<body>
+        <header><h1 id="Portafolio Paradigmas"><a href="http://localhost:1313/">Portafolio Paradigmas</a></h1></header>
+<main>
     
     
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-    
-
-    
-<link rel="stylesheet" href="/ananke/css/main.min.css" >
-
-
-
-
-    
-
-    
-      
-
-    
-
-    
-    
-      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
-      <link href="/index.xml" rel="feed" type="application/rss+xml" title="My New Hugo Site" />
-      
-    
-
-    
-      <link rel="canonical" href="http://localhost:1313/">
-    
-
-    <meta property="og:url" content="http://localhost:1313/">
-  <meta property="og:site_name" content="My New Hugo Site">
-  <meta property="og:title" content="My New Hugo Site">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
-
-  <meta itemprop="name" content="My New Hugo Site">
-  <meta itemprop="datePublished" content="2025-02-21T10:19:46-08:00">
-  <meta itemprop="dateModified" content="2025-02-21T10:19:46-08:00">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="My New Hugo Site">
-
-	
-  </head><body class="ma0 avenir bg-near-white development">
-
-    
-
-  <header>
-    <div class="pb3-m pb6-l bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        My New Hugo Site
-      
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-      <div class="ananke-socials"></div>
-
-    </div>
-  </div>
-</nav>
-
-      <div class="tc-l pv3 ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          My New Hugo Site
-        </h1>
-        
-      </div>
-    </div>
-  </header>
-
-
-    <main class="pb7" role="main">
-      
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    
-  </article>
-
-  
-  
-  
-  
-  
-
-  
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="relative w-100 mb4">
+    <div id="content">
+    <aside id="sidebar">
+        <div id="avatar">
             
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/practica0/" class="color-inherit dim link">
-            Practica 0: Markdown, Git &amp; Hugo
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Jennifer
+            <img class="flower" src="/static/yoppp.jpg">
+            
         </div>
-        <a href="/practica0/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
         
-      </section>
+        <div id="bio">
+        
+            <p>Jennifer Salgado Pacheco</p>
+<p>375100</p>
+<p>Grupo 942</p>
 
-      
+        
+        </div>
+        
+        <div class="small-box">
+            
+            </ul>
+        </div>
+        
+        <nav class="links">
+            <ul>
+            
+            
+                <li><a href="https://github.com/nidoco">github</a></li>
+            
+            
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <article id="top" class="clearfix">
+            
+            <section>
+            <div class="img-right">
+                <img src="/static/image.png">
+            </div>
+            <div>
+            <h1>portafolio de Jennifer</h1>
+            
+                <p>Carrera: Ingeniería en Software y Tecnologías Emergentes</p>
+            
+            </div>
+            </section>
+            <section>
+            <h4></h4>
+                <ul>
+                
+                </ul>
+            </section>
+            
+        </article>
+    
+    
+    
+        <article id="post-0">
+            <h2><a href="/pr%C3%A1ctica-2-an%C3%A1lisis-de-c%C3%B3digo/">Práctica 2: Análisis de código</a></h2>
+            
+            tags:
+            
+            <a href="/tags/Python">Python</a>
+            
+            <div class="post-header">
+                @Jennifer Salgado <span class="timestamp">30/03/2025</span>
+            </div>
+            <p><h1 id="práctica-2">Práctica 2</h1>
+<h2 id="paradigmas-de-programación">Paradigmas de programación</h2>
+<p>El objetivo de esta práctica es explicar de manera detallada cómo funciona el programa.</p>
+<h4 id="estructura-del-código">ESTRUCTURA DEL CÓDIGO</h4>
+<p><strong>env/ (Entorno Virtual):</strong> Este directorio utiliza un entorno virtual de Python. Al activar este entorno antes de correr el programa, se garantiza la consistencia y reproducibilidad de la ejecución.</p>
+<p><strong>src/ (Código Fuente):</strong> Este directorio comúnmente alberga el código fuente principal de la aplicación.</p>
+<p><strong>pycache:</strong> Guarda el bytecode compilado de los módulos .py en este directorio para acelerar la importación en ejecuciones posteriores.</p></p>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="text-content"><p><strong>static/:</strong> Contiene archivos estáticos utilizados por una interfaz web, como hojas de estilo CSS, archivos JavaScript, …</p></div>
+                <div class="full-content" style="display: none;"><p><strong>static/:</strong> Contiene archivos estáticos utilizados por una interfaz web, como hojas de estilo CSS, archivos JavaScript, imágenes u otros recursos que se sirven directamente al navegador sin procesamiento dinámico.</p>
+<p><strong>templates/:</strong> Si el programa tiene una interfaz web, este directorio contendría los archivos de plantillas que definen la estructura y presentación de las páginas web dinámicas generadas por la aplicación.</p>
+<p><strong>biblioteca_web.py:</strong> Es la implementación de una interfaz web para la   biblioteca.</p>
+<p><strong>biblioteca.py:</strong> Contiene la lógica principal del sistema de gestión   de la biblioteca.</p>
+<p><strong>memory_management.py:</strong> Contiene código relacionado con la gestión de   la memoria utilizada por la aplicación.</p>
+<p><strong>Makefile.txt:</strong> Está diseñado para automatizar tareas dentro del proyecto.</p>
+<p><strong>requirements.txt:</strong> Este archivo es crucial para gestionar las dependencias del proyecto. Enumera todos los paquetes (bibliotecas) de Python que el proyecto necesita para funcionar correctamente.</p>
+<h2 id="biblioteca_webpy">biblioteca_web.py</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> flask <span style="color:#f92672">import</span> Flask, request, jsonify, render_template
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> memory_management <span style="color:#f92672">import</span> memory_management
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> biblioteca <span style="color:#f92672">import</span> Book, DigitalBook, Member, Library, Genre
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>app <span style="color:#f92672">=</span> Flask(__name__)
+</span></span><span style="display:flex;"><span>library <span style="color:#f92672">=</span> Library()
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Cargar datos al iniciar la aplicación</span>
+</span></span><span style="display:flex;"><span>library<span style="color:#f92672">.</span>load_library_from_file(<span style="color:#e6db74">&#34;library.json&#34;</span>)
+</span></span><span style="display:flex;"><span>library<span style="color:#f92672">.</span>load_members_from_file(<span style="color:#e6db74">&#34;members.json&#34;</span>)
+</span></span></code></pre></div><ul>
+<li>Importa las clases necesarias de Flask y los módulos propios</li>
+<li>Crea una instancia de Flask (app) y de la biblioteca (library)</li>
+<li>Carga los datos iniciales desde archivos JSON</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> render_template(<span style="color:#e6db74">&#39;index.html&#39;</span>)
+</span></span></code></pre></div><ul>
+<li>Muestra la página principal (index.html) cuando se accede a la raíz del sitio</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/books&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;GET&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_books</span>():
+</span></span><span style="display:flex;"><span>    books <span style="color:#f92672">=</span> [book<span style="color:#f92672">.</span>to_dict() <span style="color:#66d9ef">for</span> book <span style="color:#f92672">in</span> library<span style="color:#f92672">.</span>books]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> jsonify(books)
+</span></span></code></pre></div><ul>
+<li>Devuelve una lista JSON con todos los libros</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/books&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_book</span>():
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>json
+</span></span><span style="display:flex;"><span>    is_digital <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;is_digital&#39;</span>, <span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> is_digital:
+</span></span><span style="display:flex;"><span>        book <span style="color:#f92672">=</span> DigitalBook(<span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        book <span style="color:#f92672">=</span> Book(<span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>add_book(book)
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>save_library_to_file(<span style="color:#e6db74">&#34;library.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    memory_management<span style="color:#f92672">.</span>display_memory_usage()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> jsonify(book<span style="color:#f92672">.</span>to_dict()), <span style="color:#ae81ff">201</span>
+</span></span></code></pre></div><ul>
+<li>Crea un libro (digital o físico) según los datos recibidos</li>
+<li>Lo agrega a la biblioteca y guarda los cambios</li>
+<li>Muestra el uso de memoria y devuelve el libro creado</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/members&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;GET&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_members</span>():
+</span></span><span style="display:flex;"><span>    members <span style="color:#f92672">=</span> [member<span style="color:#f92672">.</span>to_dict() <span style="color:#66d9ef">for</span> member <span style="color:#f92672">in</span> library<span style="color:#f92672">.</span>members]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> jsonify(members)
+</span></span></code></pre></div><ul>
+<li>Devuelve una lista JSON con todos los miembros</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/members&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_member</span>():
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>json
+</span></span><span style="display:flex;"><span>    member <span style="color:#f92672">=</span> Member(data[<span style="color:#e6db74">&#39;id&#39;</span>], data[<span style="color:#e6db74">&#39;name&#39;</span>])
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>add_member(member)
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>save_members_to_file(<span style="color:#e6db74">&#34;members.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    memory_management<span style="color:#f92672">.</span>display_memory_usage()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> jsonify(member<span style="color:#f92672">.</span>to_dict()), <span style="color:#ae81ff">201</span>
+</span></span></code></pre></div><ul>
+<li>Crea un nuevo miembro y lo agrega a la biblioteca</li>
+<li>Guarda los cambios y muestra el uso de memoria</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/issue_book&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">issue_book</span>():
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>json
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>issue_book(data[<span style="color:#e6db74">&#39;book_id&#39;</span>], data[<span style="color:#e6db74">&#39;member_id&#39;</span>])
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>save_library_to_file(<span style="color:#e6db74">&#34;library.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>save_members_to_file(<span style="color:#e6db74">&#34;members.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    memory_management<span style="color:#f92672">.</span>display_memory_usage()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> jsonify({<span style="color:#e6db74">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;Libro prestado satisfactoriamente!&#34;</span>})
+</span></span></code></pre></div><ul>
+<li>Registra el préstamo de un libro a un miembro</li>
+<li>Guarda los cambios en ambos archivos</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/return_book&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">return_book</span>():
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span>json
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>return_book(data[<span style="color:#e6db74">&#39;book_id&#39;</span>], data[<span style="color:#e6db74">&#39;member_id&#39;</span>])
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>save_library_to_file(<span style="color:#e6db74">&#34;library.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>save_members_to_file(<span style="color:#e6db74">&#34;members.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    memory_management<span style="color:#f92672">.</span>display_memory_usage()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> jsonify({<span style="color:#e6db74">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;Libro devuelto satisfactoriamente!&#34;</span>})
+</span></span></code></pre></div><ul>
+<li>Registra la devolución de un libro</li>
+<li>Guarda los cambios en ambos archivos</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/save&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">save</span>():
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>save_library_to_file(<span style="color:#e6db74">&#34;library.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>save_members_to_file(<span style="color:#e6db74">&#34;members.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    memory_management<span style="color:#f92672">.</span>display_memory_usage()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> jsonify({<span style="color:#e6db74">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;Datos guardados exitosamente!&#34;</span>})
+</span></span></code></pre></div><ul>
+<li>Guarda los datos actuales en los archivos JSON</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/load&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;POST&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load</span>():
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>load_library_from_file(<span style="color:#e6db74">&#34;library.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>load_members_from_file(<span style="color:#e6db74">&#34;members.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    memory_management<span style="color:#f92672">.</span>display_memory_usage()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> jsonify({<span style="color:#e6db74">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;Datos cargados exitosamente!&#34;</span>})
+</span></span></code></pre></div><ul>
+<li>Recarga los datos desde los archivos JSON</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#a6e22e">@app.route</span>(<span style="color:#e6db74">&#39;/genres&#39;</span>, methods<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;GET&#39;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_genres</span>():
+</span></span><span style="display:flex;"><span>    genres <span style="color:#f92672">=</span> Genre<span style="color:#f92672">.</span>all_genres()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> jsonify(genres)
+</span></span></code></pre></div><ul>
+<li>Devuelve una lista de todos los géneros disponibles</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+</span></span><span style="display:flex;"><span>    app<span style="color:#f92672">.</span>run(debug<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span></code></pre></div><ul>
+<li>Inicia el servidor Flask en modo debug cuando se ejecuta directamente</li>
+</ul>
+<p>Este código implementa una API de biblioteca usando Flask que permite gestionar libros (tanto físicos como digitales) y miembros mediante operaciones RESTful. La aplicación carga automáticamente los datos desde archivos JSON al iniciar y guarda los cambios después de cada modificación.  La arquitectura modular permite distinguir entre libros tradicionales y digitales (estos últimos con atributos específicos como formato de archivo), proporcionando una solución completa y escalable para la administración de bibliotecas con persistencia de datos.</p>
+<h2 id="bibliotecapy">biblioteca.py</h2>
+<p>Este módulo define las clases principales para gestionar una biblioteca, incluyendo libros (físicos y digitales), miembros y operaciones básicas. A continuación, se explica su estructura clave:</p>
+<p><strong>Clase Genre (Géneros literarios):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Genre</span>:
+</span></span><span style="display:flex;"><span>    FICTION <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Ficcion&#34;</span>
+</span></span><span style="display:flex;"><span>    NON_FICTION <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;No Ficcion&#34;</span>
+</span></span><span style="display:flex;"><span>    SCIENCE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Ciencia&#34;</span>
+</span></span><span style="display:flex;"><span>    HISTORY <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Historia&#34;</span>
+</span></span><span style="display:flex;"><span>    FANTASY <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Fantasia&#34;</span>
+</span></span><span style="display:flex;"><span>    BIOGRAPHY <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Biografia&#34;</span>
+</span></span><span style="display:flex;"><span>    OTHER <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Otro&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@classmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">all_genres</span>(cls):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> [cls<span style="color:#f92672">.</span>FICTION, cls<span style="color:#f92672">.</span>NON_FICTION, cls<span style="color:#f92672">.</span>SCIENCE, 
+</span></span><span style="display:flex;"><span>                cls<span style="color:#f92672">.</span>HISTORY, cls<span style="color:#f92672">.</span>FANTASY, cls<span style="color:#f92672">.</span>BIOGRAPHY, cls<span style="color:#f92672">.</span>OTHER]
+</span></span></code></pre></div><ul>
+<li>Proporciona una enumeración de géneros literarios.</li>
+</ul>
+<p><strong>Clase Book (Libro Base):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Book</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, book_id, title, author, publication_year, genre, quantity):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>id <span style="color:#f92672">=</span> book_id
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>title <span style="color:#f92672">=</span> title
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>author <span style="color:#f92672">=</span> author
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>publication_year <span style="color:#f92672">=</span> publication_year
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>genre <span style="color:#f92672">=</span> genre
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>quantity <span style="color:#f92672">=</span> quantity
+</span></span><span style="display:flex;"><span>        memory_management<span style="color:#f92672">.</span>increment_heap_allocations(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __del__(self):
+</span></span><span style="display:flex;"><span>        memory_management<span style="color:#f92672">.</span>increment_heap_deallocations(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">to_dict</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;id&#34;</span>: self<span style="color:#f92672">.</span>id,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;title&#34;</span>: self<span style="color:#f92672">.</span>title,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;author&#34;</span>: self<span style="color:#f92672">.</span>author,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;publication_year&#34;</span>: self<span style="color:#f92672">.</span>publication_year,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;genre&#34;</span>: self<span style="color:#f92672">.</span>genre,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;quantity&#34;</span>: self<span style="color:#f92672">.</span>quantity
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@staticmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">from_dict</span>(data):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> Book(data[<span style="color:#e6db74">&#34;id&#34;</span>], data[<span style="color:#e6db74">&#34;title&#34;</span>], <span style="color:#f92672">...</span>)
+</span></span></code></pre></div><ul>
+<li>Constructor con parámetros básicos de un libro</li>
+<li><strong>to_dict()</strong> para serialización</li>
+<li><strong>from_dict()</strong> para deserialización</li>
+<li>Manejo de memoria en creación/eliminación</li>
+</ul>
+<p><strong>Clase DigitalBook(Herencia de Book):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DigitalBook</span>(Book):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, book_id, title, <span style="color:#f92672">...</span>, file_format):
+</span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span>__init__(book_id, title, <span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>file_format <span style="color:#f92672">=</span> file_format
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">to_dict</span>(self):
+</span></span><span style="display:flex;"><span>        data <span style="color:#f92672">=</span> super()<span style="color:#f92672">.</span>to_dict()
+</span></span><span style="display:flex;"><span>        data[<span style="color:#e6db74">&#34;file_format&#34;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>file_format
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> data
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@staticmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">from_dict</span>(data):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> DigitalBook(data[<span style="color:#e6db74">&#34;id&#34;</span>], data[<span style="color:#e6db74">&#34;title&#34;</span>], <span style="color:#f92672">...</span>, data[<span style="color:#e6db74">&#34;file_format&#34;</span>])
+</span></span></code></pre></div><ul>
+<li>Extiende <strong>Book</strong> añadiendo:
+<ul>
+<li>Atributo file_format (PDF, EPUB, etc.)</li>
+<li>Sobreescribe métodos de serialización para incluir el nuevo campo</li>
+</ul>
+</li>
+</ul>
+<p><strong>Clase Member(Miembros):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Member</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, member_id, name):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>id <span style="color:#f92672">=</span> member_id
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>issued_books <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        memory_management<span style="color:#f92672">.</span>increment_heap_allocations(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">to_dict</span>(self):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;id&#34;</span>: self<span style="color:#f92672">.</span>id,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;name&#34;</span>: self<span style="color:#f92672">.</span>name,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;issued_books&#34;</span>: self<span style="color:#f92672">.</span>issued_books
+</span></span><span style="display:flex;"><span>        }
+</span></span></code></pre></div><ul>
+<li>Información básica del miembro</li>
+<li>Lista de IDs de libros prestados (<strong>issued_books</strong>)</li>
+</ul>
+<p><strong>Class Library (Núcleo del sistema):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Library</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>books <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>members <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_book</span>(self, book):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>books<span style="color:#f92672">.</span>append(book)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Libro agregado exitosamente!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">issue_book</span>(self, book_id, member_id):
+</span></span><span style="display:flex;"><span>        book <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>find_book_by_id(book_id)
+</span></span><span style="display:flex;"><span>        member <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>find_member_by_id(member_id)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> book <span style="color:#f92672">and</span> member <span style="color:#f92672">and</span> book<span style="color:#f92672">.</span>quantity <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>            book<span style="color:#f92672">.</span>quantity <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>            member<span style="color:#f92672">.</span>issued_books<span style="color:#f92672">.</span>append(book_id)
+</span></span></code></pre></div><ul>
+<li>Añadir libros/miembros</li>
+<li>Préstamos (issue_book) y devoluciones (return_book)</li>
+<li>Búsquedas por ID</li>
+<li>Persistencia en JSON</li>
+</ul>
+<p><strong>Persistencia en JSON:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">save_library_to_file</span>(self, filename):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(filename, <span style="color:#e6db74">&#39;w&#39;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;UTF-8&#39;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>        json<span style="color:#f92672">.</span>dump([book<span style="color:#f92672">.</span>to_dict() <span style="color:#66d9ef">for</span> book <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>books], file)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_library_from_file</span>(self, filename):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(filename, <span style="color:#e6db74">&#39;r&#39;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;UTF-8&#39;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>        data <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>load(file)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>books <span style="color:#f92672">=</span> [DigitalBook<span style="color:#f92672">.</span>from_dict(item) <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;file_format&#34;</span> <span style="color:#f92672">in</span> item 
+</span></span><span style="display:flex;"><span>                     <span style="color:#66d9ef">else</span> Book<span style="color:#f92672">.</span>from_dict(item) <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> data]
+</span></span></code></pre></div><ul>
+<li><strong>Guardado:</strong> Convierte objetos a diccionarios y los escribe en JSON</li>
+<li><strong>Carga:</strong> Reconstruye objetos desde JSON, diferenciando entre libros normales y digitales</li>
+</ul>
+<p><strong>Función Principal (main):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    library <span style="color:#f92672">=</span> Library()
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>load_library_from_file(<span style="color:#e6db74">&#34;library.json&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">1. Agregar libro</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">2. Mostrar libros</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">...&#34;</span>)
+</span></span><span style="display:flex;"><span>        choice <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Opción: &#34;</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> choice <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1&#34;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Lógica para agregar libro</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> choice <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;2&#34;</span>:
+</span></span><span style="display:flex;"><span>            library<span style="color:#f92672">.</span>display_books()
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># ... otras opciones ...</span>
+</span></span></code></pre></div><ol>
+<li>Carga datos iniciales</li>
+<li>Muestra menú interactivo</li>
+<li>Procesa opciones del usuario</li>
+<li>Guarda al salir</li>
+</ol>
+<p>Implementa un gestor de biblioteca con clases para libros (físicos/digitales) y miembros. Permite:</p>
+<ul>
+<li>Agregar/buscar libros y usuarios</li>
+<li>Gestionar préstamos y devoluciones</li>
+<li>Guardar datos en JSON automáticamente</li>
+<li>Interfaz de menú para operaciones</li>
+</ul>
+<p>Usa POO con herencia (libros digitales), serialización JSON y gestión de memoria.</p>
+<h2 id="funcionamiento-del-programa">Funcionamiento del programa</h2>
+<p>El funcionamiento del programa sigue este flujo:</p>
+<ol>
+<li>
+<p><strong>Inicio</strong>:</p>
+<ul>
+<li>Al ejecutar, carga los datos existentes de <strong>library.json</strong> y <strong>members.json</strong></li>
+<li>Muestra un menú interactivo con 8 opciones</li>
+</ul>
+</li>
+<li>
+<p><strong>Operaciones principales</strong>:</p>
+<ul>
+<li><em>Libros</em>:
+<ol>
+<li>Agregar nuevos (físicos/digitales)</li>
+<li>Mostrar todos disponibles</li>
+<li>Buscar por ID</li>
+</ol>
+</li>
+<li><em>Miembros</em>:
+<ol>
+<li>Registrar nuevos</li>
+<li>Consultar existentes</li>
+<li>Ver sus libros prestados</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Préstamos</strong>:</p>
+<ul>
+<li>Un miembro puede tomar prestado un libro (reduce stock)</li>
+<li>Al devolverlo, se incrementa el stock</li>
+</ul>
+</li>
+<li>
+<p><strong>Persistencia</strong>:</p>
+<ul>
+<li>Cada cambio importante guarda automáticamente en JSON</li>
+<li>Datos persisten entre ejecuciones del programa</li>
+</ul>
+</li>
+<li>
+<p><strong>Ejemplo de flujo</strong>:</p>
+<ol>
+<li>Usuario selecciona &ldquo;Agregar libro&rdquo;</li>
+<li>Ingresa datos (título, autor, etc.)</li>
+<li>El sistema valida y guarda el libro</li>
+<li>Automáticamente actualiza <strong>library.json</strong></li>
+<li>Puede prestarlo seleccionando &ldquo;Préstamo&rdquo;</li>
+</ol>
+</li>
+<li>
+<p><strong>Salida</strong>:</p>
+<ul>
+<li>Al elegir &ldquo;Guardar y salir&rdquo;, asegura la última versión en disco</li>
+<li>Todos los cambios quedan persistentes para la próxima ejecución</li>
+</ul>
+</li>
+</ol>
+<h3 id="visualización">Visualización</h3>
+<p><img src="visualizacion.png" alt="alt text"></p>
+<p>El sistema mantiene consistencia entre:</p>
+<ul>
+<li>Objetos en memoria</li>
+<li>Archivos JSON (backup)</li>
+<li>Interfaz de usuario (menú)</li>
+</ul>
+<p>Permitiendo gestión completa sin pérdida de datos.</p>
+<p>Repositorio: <a href="https://github.com/nidoco/PortafolioParadigmas/tree/master/content/practica2">https://github.com/nidoco/PortafolioParadigmas/tree/master/content/practica2</a></p></div>
+                <summary class="read-more-btn" onclick="toggleReadMore('post-0')" style="display: inline;">Leer más</summary>
+                
+            </div>
+            
+        </article>
+    
+        <article id="post-1">
+            <h2><a href="/pr%C3%A1ctica-4-paradigma-l%C3%B3gico/">Práctica 4: Paradigma Lógico</a></h2>
+            
+            tags:
+            
+            <a href="/tags/Prolog">Prolog</a>
+            
+            <div class="post-header">
+                @Jennifer Salgado <span class="timestamp">30/03/2025</span>
+            </div>
+            <p><h1 id="práctica-4">Práctica 4</h1>
+<h2 id="paradigmas-de-programación">Paradigmas de programación</h2>
+<p>En esta práctica, analizaremos el paradigma lógico y el lenguaje Prolog, estudiando sus conceptos básicos, su funcionamiento y su aplicación. El propósito es adquirir familiaridad con los fundamentos de Prolog, incluyendo su sintaxis y su uso en la resolución de problemas basados en lógica.</p>
+<h3 id="en-qué-consiste-el-paradigma-lógico"><strong>¿En qué consiste el Paradigma Lógico?</strong></h3>
+<p>El paradigma lógico parte de la idea de que los programas se componen de afirmaciones lógicas (hechos y reglas). A diferencia de los lenguajes imperativos, que indican cómo ejecutar una tarea, este enfoque define qué es verdadero y permite que el sistema deduzca las conclusiones automáticamente. Un programa lógico opera sobre una base de conocimiento, donde el usuario realiza consultas y el sistema (mediante un motor de inferencia) se encarga de encontrar las respuestas.</p></p>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="text-content"><h3 id="qué-es-prolog"><strong>¿Qué es Prolog?</strong></h3>
+<p>Prolog (PROgramming in LOGic) es el principal lenguaje representante del paradigma lógico. Basado en la …</p></div>
+                <div class="full-content" style="display: none;"><h3 id="qué-es-prolog"><strong>¿Qué es Prolog?</strong></h3>
+<p>Prolog (PROgramming in LOGic) es el principal lenguaje representante del paradigma lógico. Basado en la lógica de primer orden, es ampliamente utilizado en inteligencia artificial, procesamiento de lenguaje natural y sistemas expertos. Su motor de inferencia emplea un algoritmo de resolución para derivar nuevos hechos a partir de los datos proporcionados.</p>
+<h2 id="primeros-pasos-con-prolog">Primeros Pasos con Prolog*</h2>
+<h3 id="instalación">Instalación</h3>
+<p>La implementación más utilizada de Prolog es <strong>SWI-Prolog</strong>. A continuación, se detallan los pasos básicos para su instalación:</p>
+<ol>
+<li>
+<p><strong>Descargar SWI-Prolog</strong>:</p>
+<ul>
+<li>Visita el <a href="https://www.swi-prolog.org/">sitio web oficial de SWI-Prolog</a>.</li>
+<li>Selecciona la versión compatible con tu sistema operativo (Windows, macOS o Linux).</li>
+</ul>
+</li>
+<li>
+<p><strong>Instalar SWI-Prolog</strong>:</p>
+<ul>
+<li>Ejecuta el instalador y sigue las instrucciones paso a paso.</li>
+</ul>
+</li>
+<li>
+<p><strong>Verificar la instalación</strong>:</p>
+<ul>
+<li>Abre una terminal o línea de comandos y escribe <code>swipl</code>.</li>
+<li>Si aparece el prompt <code>?-</code>, significa que la instalación se realizó correctamente.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Opción alternativa</strong>:<br>
+Si prefieres no instalar nada, puedes utilizar entornos en línea como <strong><a href="https://swish.swi-prolog.org/">SWISH</a></strong>, que permite ejecutar Prolog directamente desde el navegador.</p>
+<h2 id="ejecutando-un-hola-mundo-en-el-intérprete">Ejecutando un &ldquo;Hola Mundo&rdquo; en el intérprete</h2>
+<p>Al iniciar SWI-Prolog, aparece el prompt <code>?-</code> donde podemos ingresar comandos directamente. Para mostrar un mensaje simple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>?- write<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;¡Hola, Mundo!&#39;</span><span style="color:#f92672">)</span>, nl.
+</span></span></code></pre></div><p>Este comando realiza dos acciones:</p>
+<ol>
+<li>
+<p><code>write()</code> muestra el texto entre comillas</p>
+</li>
+<li>
+<p><code>nl() </code>agrega un salto de línea.</p>
+<p>El sistema responde true., confirmando la ejecución correcta.</p>
+</li>
+</ol>
+<p><strong>Regla clave:</strong> Todo enunciado en Prolog debe finalizar con punto (.).</p>
+<p><strong>Finalizando la sesión</strong></p>
+<p>Para cerrar el intérprete existen dos métodos:</p>
+<p><strong>Comando directo:</strong><code> halt.</code></p>
+<p><strong>Atajo de teclado:</strong> <code>Ctrl+D</code> (Linux/Mac) o <code>Ctrl+C</code> seguido de e (Windows)</p>
+<h3 id="desarrollo-en-archivos-fuente">Desarrollo en archivos fuente</h3>
+<p>La práctica recomendada es guardar el código en archivos .pl. Ejemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">% Definición de un predicado simple</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">saludar</span> <span style="color:#f92672">:-</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;¡Hola desde un archivo!&#39;</span>),  <span style="color:#75715e">% Mensaje a mostrar</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">nl</span>.                                <span style="color:#75715e">% Nueva línea</span>
+</span></span></code></pre></div><p><strong>Uso del archivo:</strong></p>
+<ol>
+<li>Carga el programa:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>?- <span style="color:#f92672">[</span><span style="color:#e6db74">&#39;hola.pl&#39;</span><span style="color:#f92672">]</span>.  % Forma abreviada
+</span></span><span style="display:flex;"><span>% Alternativa: consult<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;hola.pl&#39;</span><span style="color:#f92672">)</span>.
+</span></span></code></pre></div><ol start="2">
+<li>Ejecuta el predicado:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>?- saludar.
+</span></span><span style="display:flex;"><span>¡Hola desde un archivo!
+</span></span><span style="display:flex;"><span>true.
+</span></span></code></pre></div><p><strong>Convenciones para comentarios:</strong></p>
+<ul>
+<li>Comentario lineal: Inicia con % (válido hasta final de línea)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">% Esto explica una sola línea</span>
+</span></span></code></pre></div><ul>
+<li>Bloque comentado: Encierra entre <code>/* */</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">/* Este comentario puede  
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   abarcar múltiples
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">   renglones */</span>
+</span></span></code></pre></div><h2 id="qué-son-los-hechos-en-prolog">¿Qué son los hechos en Prolog?</h2>
+<p>En Prolog, los hechos son declaraciones que representan información verdadera sobre un dominio específico. Definen relaciones entre objetos o propiedades de estos, formando la base del conocimiento del programa.</p>
+<p><strong>Sintaxis para Definir Hechos:</strong></p>
+<ul>
+<li>
+<p><strong>Nomenclatura:</strong></p>
+<p>Los predicados (nombres de relaciones) y átomos (objetos concretos) comienzan con minúscula.</p>
+<p>Ejemplo: gato(tom). → gato es el predicado y tom el átomo.</p>
+</li>
+<li>
+<p><strong>Estructura:</strong></p>
+<p>Predicado seguido de argumentos entre paréntesis, separados por comas. Termina siempre con un punto (.).</p>
+<p><strong>Ejemplo:</strong> padre(juan, maria). (Juan es padre de María).</p>
+</li>
+<li>
+<p><strong>Semántica:</strong></p>
+<p>Un hecho como vuela(pajaro). afirma que &ldquo;los pájaros vuelan&rdquo;.
+Prolog lo interpreta como una verdad absoluta dentro del programa.</p>
+</li>
+</ul>
+<p><strong>Importancia</strong></p>
+<ul>
+<li>
+<p>Son la base para consultas y reglas.</p>
+</li>
+<li>
+<p>Permiten modelar conocimiento de forma declarativa.</p>
+</li>
+<li>
+<p><strong>Ejemplo de consulta:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>?- gato<span style="color:#f92672">(</span>tom<span style="color:#f92672">)</span>.  % Prolog responderá <span style="color:#e6db74">&#39;true.&#39;</span> si el hecho existe.
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="reglas-de-prolog">Reglas de Prolog</h2>
+<p>Las reglas en Prolog son la herramienta fundamental para establecer relaciones lógicas entre diferentes elementos de conocimiento. Permiten crear conclusiones basadas en condiciones específicas, dando flexibilidad y poder expresivo a los programas.</p>
+<p><strong>Estructura Fundamental de las Reglas</strong>
+Cada regla se compone de dos partes principales:</p>
+<ol>
+<li>
+<p><strong>Conclusión (cabeza):</strong> Representa el resultado que queremos validar</p>
+</li>
+<li>
+<p><strong>Premisas (cuerpo):</strong> Condiciones que deben cumplirse para que la conclusión sea verdadera</p>
+</li>
+</ol>
+<p>La sintaxis básica sigue este patrón:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#a6e22e">conclusion</span>(Argumentos) :- <span style="color:#a6e22e">condicion1</span>(Arg1), <span style="color:#a6e22e">condicion2</span>(Arg2).
+</span></span></code></pre></div><p><strong>Operadores Lógicos Clave</strong></p>
+<ul>
+<li>
+<p><strong>Implicación (:-):</strong> Se lee como &ldquo;si&rdquo; o &ldquo;solamente si&rdquo;</p>
+</li>
+<li>
+<p>**Conjunción (,):**Operador &ldquo;Y&rdquo; lógico (todas las condiciones deben ser verdaderas)</p>
+</li>
+<li>
+<p><strong>Disyunción (;):</strong> Operador &ldquo;O&rdquo; lógico (al menos una condición debe ser verdadera)</p>
+</li>
+</ul>
+<p><strong>Ejemplos Ilustrativos</strong></p>
+<ol>
+<li>Relación simple:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">% Si alguien estudia, entonces es aplicado</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">es_aplicado</span>(Alumno) :- <span style="color:#a6e22e">estudia</span>(Alumno).
+</span></span></code></pre></div><ol start="2">
+<li>Relación compuesta (AND):</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">% Dos personas son colegas si trabajan en la misma empresa</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">son_colega</span>(Persona1, Persona2) :- 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">trabaja_en</span>(Persona1, Empresa),
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">trabaja_en</span>(Persona2, Empresa).
+</span></span></code></pre></div><ol start="3">
+<li>Alternativas (OR):</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">% Alguien está entretenido si ve películas o lee libros</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">entretenido</span>(Persona) :- <span style="color:#a6e22e">ve_peliculas</span>(Persona); <span style="color:#a6e22e">lee_libros</span>(Persona).
+</span></span></code></pre></div><h2 id="consideraciones-importantes">Consideraciones Importantes</h2>
+<ol>
+<li>
+<p><strong>Precedencia de operadores:</strong>
+Las comas (AND) tienen mayor prioridad que los punto y coma (OR). Se pueden usar paréntesis para agrupar condiciones</p>
+</li>
+<li>
+<p><strong>Buenas prácticas:</strong> Mantener nombres de predicados en minúscula. Usar nombres descriptivos para variables y predicados. Comentar adecuadamente las reglas complejas</p>
+</li>
+<li>
+<p><strong>Ejecución práctica:</strong> Prolog evalúa las condiciones de izquierda a derecha. Busca unificar las variables con hechos conocidos. Puede generar múltiples soluciones mediante backtracking</p>
+</li>
+</ol>
+<h2 id="aplicación-en-problemas-reales">Aplicación en Problemas Reales</h2>
+<p>Las reglas permiten modelar conocimiento complejo como:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">% Definición de relación familiar</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">es_abuelo</span>(Abuelo, Nieto) :-
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">es_padre</span>(Abuelo, Padre),
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">es_padre</span>(Padre, Nieto).
+</span></span></code></pre></div><p>Este enfoque declarativo hace que Prolog sea especialmente útil para:</p>
+<ul>
+<li>Sistemas expertos</li>
+<li>Representación de conocimiento</li>
+<li>Solución de problemas lógicos</li>
+<li>Procesamiento de lenguaje natural</li>
+</ul>
+<h2 id="queries">Queries</h2>
+<p>Las consultas son preguntas que se hacen a la base de conocimiento. Prolog intentará satisfacer la consulta buscando hechos y aplicando reglas.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>?- gato<span style="color:#f92672">(</span>tom<span style="color:#f92672">)</span>.        % ¿Es Tom un gato?
+</span></span><span style="display:flex;"><span>true.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>?- le_gusta_comer<span style="color:#f92672">(</span>jorge, pizza<span style="color:#f92672">)</span>. % ¿A Jorge le gusta comer pizza?
+</span></span><span style="display:flex;"><span>false. % <span style="color:#f92672">(</span>si no está en la base de conocimiento<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>?- feliz<span style="color:#f92672">(</span>lili<span style="color:#f92672">)</span>.      % ¿Está Lili feliz?
+</span></span><span style="display:flex;"><span>% Prolog intentará satisfacer baila<span style="color:#f92672">(</span>lili<span style="color:#f92672">)</span>.
+</span></span></code></pre></div><p>Las variables (empiezan con Mayúscula) permiten hacer preguntas más generales:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#e6db74">?-</span> <span style="color:#a6e22e">le_gusta_comer</span>(<span style="color:#e6db74">jorge</span>, Comida).
+</span></span><span style="display:flex;"><span>Comida <span style="color:#f92672">=</span> <span style="color:#e6db74">pasta</span>.
+</span></span></code></pre></div><h2 id="base-de-conocimiento">Base de Conocimiento</h2>
+<p>Un conjunto de hechos y reglas forma una base de conocimiento. Usualmente se guarda en un archivo con extensión .pl.</p>
+<p><strong>Ejemplo: kb1.pl</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">% kb1.pl</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">chica</span>(<span style="color:#e6db74">priya</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">chica</span>(<span style="color:#e6db74">natasha</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">chica</span>(<span style="color:#e6db74">jasmin</span>).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sabe_cocinar</span>(<span style="color:#e6db74">priya</span>).
+</span></span></code></pre></div><p><strong>Para usarla:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>?- <span style="color:#f92672">[</span>kb1<span style="color:#f92672">]</span>.
+</span></span><span style="display:flex;"><span>true.
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#e6db74">?-</span> <span style="color:#a6e22e">chica</span>(X).
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> <span style="color:#e6db74">priya</span> ; <span style="color:#75715e">% presiona ; para buscar más soluciones</span>
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> <span style="color:#e6db74">natasha</span> ;
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> <span style="color:#e6db74">jasmin</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">?-</span> <span style="color:#a6e22e">sabe_cocinar</span>(<span style="color:#e6db74">jasmin</span>).
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">false</span>.
+</span></span></code></pre></div><h2 id="relaciones-en-prolog">Relaciones en Prolog</h2>
+<p>Prolog se destaca en definir y consultar relaciones complejas.</p>
+<p><strong>Ejemplo Práctico: Familia</strong>
+Considera el siguiente archivo familia.pl:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">% Hechos: parent(PadreMadre, HijoHija)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">parent</span>(<span style="color:#e6db74">pam</span>, <span style="color:#e6db74">bob</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">parent</span>(<span style="color:#e6db74">tom</span>, <span style="color:#e6db74">bob</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">parent</span>(<span style="color:#e6db74">tom</span>, <span style="color:#e6db74">liz</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">parent</span>(<span style="color:#e6db74">bob</span>, <span style="color:#e6db74">ann</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">parent</span>(<span style="color:#e6db74">bob</span>, <span style="color:#e6db74">pat</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">parent</span>(<span style="color:#e6db74">pat</span>, <span style="color:#e6db74">jim</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">parent</span>(<span style="color:#e6db74">peter</span>, <span style="color:#e6db74">jim</span>). <span style="color:#75715e">% Corregido de &#39;pete&#39; en PDF para consistencia visual</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Hechos: male(Persona), female(Persona)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">male</span>(<span style="color:#e6db74">tom</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">male</span>(<span style="color:#e6db74">bob</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">male</span>(<span style="color:#e6db74">jim</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">male</span>(<span style="color:#e6db74">peter</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">female</span>(<span style="color:#e6db74">pam</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">female</span>(<span style="color:#e6db74">liz</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">female</span>(<span style="color:#e6db74">ann</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">female</span>(<span style="color:#e6db74">pat</span>).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Reglas</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mother</span>(Madre, HijoHija) :-
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parent</span>(Madre, HijoHija),
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">female</span>(Madre).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">father</span>(Padre, HijoHija) :-
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parent</span>(Padre, HijoHija),
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">male</span>(Padre).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">has_child</span>(Persona) :-
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parent</span>(Persona, <span style="color:#66d9ef">_</span>). <span style="color:#75715e">% _ es una variable anónima</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sister</span>(Hermana, Persona) :-
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parent</span>(PadreMadre, Hermana),
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parent</span>(PadreMadre, Persona),
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">female</span>(Hermana),
+</span></span><span style="display:flex;"><span>    Hermana <span style="color:#e6db74">\==</span> Persona. <span style="color:#75715e">% \== significa &#34;no es idéntico a&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">brother</span>(Hermano, Persona) :-
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parent</span>(PadreMadre, Hermano),
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parent</span>(PadreMadre, Persona),
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">male</span>(Hermano),
+</span></span><span style="display:flex;"><span>    Hermano <span style="color:#e6db74">\==</span> Persona.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">grandparent</span>(AbueloAbuela, NietoNieta) :-
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parent</span>(AbueloAbuela, PadreMadreIntermedio),
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">parent</span>(PadreMadreIntermedio, NietoNieta).
+</span></span></code></pre></div><p><strong>Consultas:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>?- <span style="color:#f92672">[</span>familia<span style="color:#f92672">]</span>.
+</span></span><span style="display:flex;"><span>true.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>?- mother<span style="color:#f92672">(</span>X, bob<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> pam.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>?- sister<span style="color:#f92672">(</span>ann, pat<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>true.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>?- grandparent<span style="color:#f92672">(</span>tom, ann<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>true.
+</span></span></code></pre></div><h2 id="recursión-en-relaciones-familiares">Recursión en Relaciones Familiares</h2>
+<p>Podemos definir un &ldquo;predecesor&rdquo; (ancestro) recursivamente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#75715e">% X es predecesor de Z si X es padre/madre de Z (caso base)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">predecessor</span>(X, Z) :- <span style="color:#a6e22e">parent</span>(X, Z).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% X es predecesor de Z si X es padre/madre de Y,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% y Y es predecesor de Z (caso recursivo)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">predecessor</span>(X, Z) :- <span style="color:#a6e22e">parent</span>(X, Y), <span style="color:#a6e22e">predecessor</span>(Y, Z).
+</span></span></code></pre></div><p><strong>Consultas:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>?- predecessor<span style="color:#f92672">(</span>tom, jim<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>true.
+</span></span></code></pre></div><h2 id="tipos-de-datos-en-prolog-términos">Tipos de Datos en Prolog (Términos)</h2>
+<p>Prolog trabaja con diferentes estructuras de datos llamadas términos, que se clasifican en:</p>
+<ol>
+<li>
+<p><strong>Átomos</strong></p>
+<p>Representan nombres simbólicos o constantes.</p>
+<p><strong>Sintaxis:</strong>
+Comienzan con minúscula: <code>gato, azul, x25</code>. Si contienen espacios o inician con mayúscula, van entre comillas simples: <code>'Átomos en Prolog', 'Juan'.</code></p>
+<p><strong>Ejemplos:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#e6db74">rojo</span>, <span style="color:#e6db74">&#39;Hola Mundo&#39;</span>, <span style="color:#e6db74">mesa</span>, <span style="color:#66d9ef">_</span><span style="color:#ae81ff">123.</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Números</strong></p>
+<p>Soporta enteros y flotantes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#ae81ff">42</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">3.1416</span>, <span style="color:#ae81ff">1000.</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Variables</strong></p>
+<p>Simbolizan valores desconocidos que Prolog intenta determinar (instanciar).</p>
+<p><strong>Reglas:</strong> Inician con mayúscula o guion bajo <code>(_): X, Resultado, _temp.</code> No son lo mismo que variables matemáticas; representan incógnitas a resolver.</p>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#e6db74">?-</span> <span style="color:#a6e22e">padre</span>(X, <span style="color:#e6db74">juan</span>).  <span style="color:#75715e">% Busca quién es padre de Juan</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Variables Anónimas (_)</strong></p>
+<p>Se usan cuando el valor es irrelevante.
+Cada _ en una regla se considera diferente.</p>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#a6e22e">tiene_hijo</span>(P) :- <span style="color:#a6e22e">padre</span>(P, <span style="color:#66d9ef">_</span>).  <span style="color:#75715e">% P tiene hijo, no importa quién</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Estructuras (Términos Compuestos)</strong></p>
+<p>Agrupan datos bajo un functor (nombre) y argumentos. Sintaxis: functor(arg1, arg2, &hellip;).</p>
+<p><strong>Usos comunes:</strong>
+Representar objetos complejos: punto(3, 5), fecha(12, agosto, 2023).
+Los hechos y reglas son estructuras:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#a6e22e">padre</span>(<span style="color:#e6db74">juan</span>, <span style="color:#e6db74">maria</span>).       <span style="color:#75715e">% Hecho: estructura con aridad 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rectangulo</span>(<span style="color:#a6e22e">punto</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>), <span style="color:#a6e22e">punto</span>(<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">5</span>)). <span style="color:#75715e">% Estructura anidada</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">``</span> 
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="operadores-en-prolog-comparación-y-aritmética"><strong>Operadores en Prolog: Comparación y Aritmética</strong></h3>
+<h4 id="1-operadores-de-comparación"><strong>1. Operadores de Comparación</strong></h4>
+<p>Permiten evaluar relaciones <strong>numéricas</strong> entre términos. Retornan <code>true</code> o <code>false</code>.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Operador</th>
+          <th>Descripción</th>
+          <th>Ejemplo (Consulta)</th>
+          <th>Resultado</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>&gt;</code></td>
+          <td>Mayor que</td>
+          <td><code>?- 5 &gt; 3.</code></td>
+          <td><code>true</code></td>
+      </tr>
+      <tr>
+          <td><code>&lt;</code></td>
+          <td>Menor que</td>
+          <td><code>?- 2 &lt; 1.</code></td>
+          <td><code>false</code></td>
+      </tr>
+      <tr>
+          <td><code>&gt;=</code></td>
+          <td>Mayor o igual que</td>
+          <td><code>?- 4 &gt;= 4.</code></td>
+          <td><code>true</code></td>
+      </tr>
+      <tr>
+          <td><code>=&lt;</code></td>
+          <td>Menor o igual que (¡ojo al <code>=</code>)</td>
+          <td><code>?- 3 =&lt; 5.</code></td>
+          <td><code>true</code></td>
+      </tr>
+      <tr>
+          <td><code>=:=</code></td>
+          <td>Igualdad numérica</td>
+          <td><code>?- 7 =:= 3+4.</code></td>
+          <td><code>true</code></td>
+      </tr>
+      <tr>
+          <td><code>=\=</code></td>
+          <td>Desigualdad numérica</td>
+          <td><code>?- 5 =\= 2*3.</code></td>
+          <td><code>true</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Notas clave</strong>:</p>
+<ul>
+<li><strong><code>=</code></strong> (unificación) vs <strong><code>=:=</code></strong> (igualdad numérica):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#e6db74">?-</span> X <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, X <span style="color:#f92672">=:=</span> <span style="color:#ae81ff">5.</span>  <span style="color:#75715e">% Primero unifica X con 5, luego compara</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">true</span>.
+</span></span></code></pre></div></li>
+<li><strong><code>=\=</code></strong> es para números; <strong><code>\==</code></strong> compara términos estructuralmente diferentes.</li>
+</ul>
+<hr>
+<h4 id="2-operadores-aritméticos"><strong>2. Operadores Aritméticos</strong></h4>
+<p>Realizan cálculos matemáticos. <strong>Requieren el operador <code>is</code> para evaluar expresiones</strong>.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Operador</th>
+          <th>Descripción</th>
+          <th>Ejemplo (Cálculo)</th>
+          <th>Resultado</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>+</code></td>
+          <td>Suma</td>
+          <td><code>?- X is 3 + 2.</code></td>
+          <td><code>X = 5</code></td>
+      </tr>
+      <tr>
+          <td><code>-</code></td>
+          <td>Resta</td>
+          <td><code>?- X is 10 - 4.</code></td>
+          <td><code>X = 6</code></td>
+      </tr>
+      <tr>
+          <td><code>*</code></td>
+          <td>Multiplicación</td>
+          <td><code>?- X is 5 * 3.</code></td>
+          <td><code>X = 15</code></td>
+      </tr>
+      <tr>
+          <td><code>/</code></td>
+          <td>División (flotante)</td>
+          <td><code>?- X is 10 / 2.</code></td>
+          <td><code>X = 2.5</code></td>
+      </tr>
+      <tr>
+          <td><code>**</code></td>
+          <td>Potencia</td>
+          <td><code>?- X is 2 ** 3.</code></td>
+          <td><code>X = 8</code></td>
+      </tr>
+      <tr>
+          <td><code>//</code></td>
+          <td>División entera</td>
+          <td><code>?- X is 7 // 2.</code></td>
+          <td><code>X = 3</code></td>
+      </tr>
+      <tr>
+          <td><code>mod</code></td>
+          <td>Módulo</td>
+          <td><code>?- X is 10 mod 3.</code></td>
+          <td><code>X = 1</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Sintaxis fundamental</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span>Resultado <span style="color:#f92672">is</span> Expresión_Aritmética.
+</span></span></code></pre></div><p><strong>Ejemplo combinado</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#e6db74">?-</span> X <span style="color:#f92672">is</span> (<span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">4.</span>  <span style="color:#75715e">% X = (8 * 2) - 4 → X = 12</span>
+</span></span></code></pre></div><p><strong>Advertencias</strong>:</p>
+<ul>
+<li><strong><code>is</code> no unifica algebraicamente</strong>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#e6db74">?-</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">is</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">+</span> X.  <span style="color:#75715e">% Error: ¡X debe estar instanciado!</span>
+</span></span></code></pre></div></li>
+<li><strong>Precedencia de operadores</strong>:<br>
+<code>*, /, //, mod</code> tienen mayor precedencia que <code>+, -</code>.</li>
+</ul>
+<hr>
+<h4 id="3-casos-prácticos"><strong>3. Casos Prácticos</strong></h4>
+<p><strong>Comparación en reglas</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#a6e22e">es_mayor</span>(X, Y) :- X <span style="color:#f92672">&gt;</span> Y.  <span style="color:#75715e">% Verifica si X es mayor que Y</span>
+</span></span></code></pre></div><p><strong>Uso en consultas</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#e6db74">?-</span> <span style="color:#a6e22e">es_mayor</span>(<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>).
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">true</span>.
+</span></span></code></pre></div><p><strong>Cálculo de factorial (recursivo)</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#a6e22e">factorial</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>).
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">factorial</span>(N, F) :- 
+</span></span><span style="display:flex;"><span>    N <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>    N1 <span style="color:#f92672">is</span> N <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">factorial</span>(N1, F1),
+</span></span><span style="display:flex;"><span>    F <span style="color:#f92672">is</span> N <span style="color:#f92672">*</span> F1.
+</span></span></code></pre></div><p><strong>Consulta</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#e6db74">?-</span> <span style="color:#a6e22e">factorial</span>(<span style="color:#ae81ff">5</span>, X).  <span style="color:#75715e">% X = 120</span>
+</span></span></code></pre></div><hr>
+<h4 id="diferencias-clave"><strong>Diferencias Clave</strong></h4>
+<table>
+  <thead>
+      <tr>
+          <th>Operador</th>
+          <th>Uso</th>
+          <th>Ejemplo</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>=</code></td>
+          <td>Unificación</td>
+          <td><code>X = 5</code> (asigna)</td>
+      </tr>
+      <tr>
+          <td><code>=:=</code></td>
+          <td>Comparación numérica</td>
+          <td><code>5 + 3 =:= 8</code></td>
+      </tr>
+      <tr>
+          <td><code>is</code></td>
+          <td>Evaluación aritmética</td>
+          <td><code>X is 2 + 2</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Consejo</strong>: Usa paréntesis para claridad en expresiones complejas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-prolog" data-lang="prolog"><span style="display:flex;"><span><span style="color:#e6db74">?-</span> X <span style="color:#f92672">is</span> (<span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>) <span style="color:#f92672">*</span> (<span style="color:#ae81ff">4</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>).  <span style="color:#75715e">% X = 15</span>
+</span></span></code></pre></div><h2 id="conclusión">Conclusión</h2>
+<p>Esta práctica ha representado una inmersión esencial en Prolog y su paradigma lógico, destacando su enfoque único para resolver problemas mediante declaraciones de hechos y reglas, en lugar de instrucciones secuenciales. Aunque tiene limitaciones en eficiencia para ciertos cálculos numéricos, brilla en problemas donde la expresividad lógica es prioritaria.</p>
+<p>‎‧₊˚✧<a href="https://github.com/nidoco/PortafolioParadigmas">Repositorio</a>✧˚₊‧</p>
+<p>「 ✦ <a href="https://nidoco.github.io/PortafolioParadigmas/">Pagina</a> ✦ 」</p></div>
+                <summary class="read-more-btn" onclick="toggleReadMore('post-1')" style="display: inline;">Leer más</summary>
+                
+            </div>
+            
+        </article>
+    
+        <article id="post-2">
+            <h2><a href="/pr%C3%A1ctica-0-markdown-git-y-hugo/">Práctica 0: Markdown, Git y Hugo</a></h2>
+            
+            tags:
+            
+            <a href="/tags/Markdown">Markdown</a>,
+            
+            <a href="/tags/Git%20y%20Hugo">Git y Hugo</a>
+            
+            <div class="post-header">
+                @Jennifer Salgado <span class="timestamp">11/03/2025</span>
+            </div>
+            <p><h1 id="primera-sesión">Primera sesión</h1>
+<h2 id="sintaxis-y-usode-markdown-crear-un-reporte-de-qué-es-markdown-cómo-se-utiliza-y-su-sintaxis">Sintaxis y usode markdown. Crear un reporte de qué es Markdown, cómo se utiliza y su sintaxis</h2>
+<h2 id="introducción">Introducción</h2>
+<p>En esta primera sesión se hizo una breve introducción a Markdown. Aquí, se presentan los diferentes elementos que se pueden utilizar en Markdown, junto con una breve explicación de su propósito y uso.</p>
+<p>Los encabezados se utilizan para crear títulos de diferentes niveles. Los encabezados varían según el número de #. Por ejemplo, # es el encabezado más grande, y ##### es el más pequeño.</p></p>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="text-content"><h1 id="encabezado-1">Encabezado 1</h1>
+<h2 id="encabezado-2">Encabezado 2</h2>
+<h3 id="encabezado-3">Encabezado 3</h3>
+<h4 id="encabezado-4">Encabezado 4</h4>
+<h5 id="encabezado-5">Encabezado 5</h5>
+<hr>
+<p>Los itálicas se utilizan los símbolos _ o * para poner …</p></div>
+                <div class="full-content" style="display: none;"><h1 id="encabezado-1">Encabezado 1</h1>
+<h2 id="encabezado-2">Encabezado 2</h2>
+<h3 id="encabezado-3">Encabezado 3</h3>
+<h4 id="encabezado-4">Encabezado 4</h4>
+<h5 id="encabezado-5">Encabezado 5</h5>
+<hr>
+<p>Los itálicas se utilizan los símbolos _ o * para poner el texto en cursiva. Ejemplo:</p>
+<p>Este es un texto en <em>itálica</em></p>
+<p>Este es un texto en <em>itálica</em></p>
+<p>Se utilizan ** o __ para poner el texto en negrita. Ejemplo:</p>
+<p>Este es un texto en <strong>negritas</strong></p>
+<p>Este es un texto en <strong>negritas</strong></p>
+<hr>
+<p>En el tachado, se usa ~~ para crear texto con una línea tachada o rayada. Ejemplo:</p>
+<p>Este es un texto <del>tachado</del></p>
+<hr>
+<p>Listas no ordenadas (UL): Usan * o - para crear elementos de lista sin orden específico.</p>
+<ul>
+<li>Elemento 1</li>
+<li>Elemento 2</li>
+<li>Elemento 3
+<ul>
+<li>Elemento 3.1</li>
+<li>Elemento 3.2
+<ul>
+<li>Elemento 3.2.1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Elemento 4</li>
+</ul>
+<hr>
+<p>Listas ordenadas (OL): Usan números seguidos de un punto (1., 2., etc.) para crear listas numeradas.</p>
+<ol>
+<li>Elemento 1</li>
+<li>Elemento 2</li>
+<li>Elemento 3
+<ol>
+<li>Elemento 3.1</li>
+<li>Elemento 3.2</li>
+</ol>
+</li>
+<li>Elemento 4</li>
+</ol>
+<hr>
+<p>Los enñaces se usan para crear hipervínculos. Puedes añadir un título al enlace usando comillas. Ejemplo:</p>
+<p><a href="http://www.google.com" title="Texto del tooltip">Texto de enlace</a></p>
+<p><a href="http://www.uabc.mx">UABC</a></p>
+<h2 id="uabc"><a href="http://www.uabc.mx" title="Sitio Universitario">UABC</a></h2>
+<p>Las sección de imágenes se usan para agregar imágenes. La diferencia con los enlaces es que se agrega un signo de exclamación (!) antes del texto.</p>
+<p><img src="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fwww.amazon.com.mx%2FSigns-Fun-Licencia-Conducir-NMLID%2Fdp%2FB0090R5R70&amp;psig=AOvVaw0HLBCLvMKia38TGOOU7ZjQ&amp;ust=1742417884167000&amp;source=images&amp;cd=vfe&amp;opi=89978449&amp;ved=0CBAQjRxqFwoTCODyk9jClIwDFQAAAAAdAAAAABAE" alt="Texto alternativo"></p>
+<p><img src="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fwww.amazon.com.mx%2FSigns-Fun-Licencia-Conducir-NMLID%2Fdp%2FB0090R5R70&amp;psig=AOvVaw0HLBCLvMKia38TGOOU7ZjQ&amp;ust=1742417884167000&amp;source=images&amp;cd=vfe&amp;opi=89978449&amp;ved=0CBAQjRxqFwoTCODyk9jClIwDFQAAAAAdAAAAABAE" alt=""></p>
+<p><img src="./images/mclovin.webp" alt="McLovin"></p>
+<p><a href="https://www.youtube.com/watch?v=bSTOzwd1BCw" title="Supercool"><img src="./images/mclovin.webp" alt="Mi papá"></a></p>
+<!-- raw HTML omitted -->
+<h2><a href="https://es.wikipedia.org/wiki/Christopher_Mintz-Plasse"><!-- raw HTML omitted --></a></h2>
+<p>En los bloques de código, se usan las tres comillas invertidas (```) para crear bloques de código.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>This is un code block
+</span></span><span style="display:flex;"><span>This is the second line of the code block
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hola mundo!&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Hello world!&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">test</span> <span style="color:#f92672">=</span> ()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;Hola mundo!&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span></code></pre></div><hr>
+<p>Para las tablas, se usa | para crear tablas y - para indicar los encabezados de cada columna.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Productos</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Laptop</td>
+          <td>3.3</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>Mouse</td>
+          <td>13.3</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th>Productos</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Laptop</td>
+          <td>3.3</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>Mouse</td>
+          <td>13.3</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>Se utiliza para crear listas de tareas, donde [ ] indica una tarea pendiente y [x] indica una tarea completada.</p>
+<blockquote>
+<p>Esto es una nota</p></blockquote>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Primera tarea</li>
+<li><input disabled="" type="checkbox"> Segunda tarea</li>
+<li><input checked="" disabled="" type="checkbox"> Tercera tarea</li>
+<li><input disabled="" type="checkbox"> Cuarta tarea</li>
+</ul>
+<hr>
+<p>Los divisores horizontales se utilizan para separar secciones del texto con una línea horizontal. Se utiliza tirple *, - o _ para utilizarlos.</p>
+<hr>
+<hr>
+<hr>
+<p>Para las menciones, puedes usar el símbolo @ seguido de un nombre de usuario para mencionar a alguien, junto con emoticonos (:smile:, :+1:) para añadir reacciones.
+@tamagotchi0_0 :+1: :smile:</p>
+<hr>
+<h1 id="segunda-sesión">Segunda sesión</h1>
+<h2 id="uso-de-git-y-github-añadir-al-reporte-que-es-git-y-github-como-se-utiliza-comandos-escenciales-para-usar-git-y-subir-la-información-a-github-como-crear-un-repositorio-y-suben-su-información-a-la-nube">Uso de Git y GitHub. Añadir al reporte que es Git y Github, como se utiliza, comandos escenciales para usar Git y subir la información a Github, como crear un repositorio y suben su información a la nube.</h2>
+<p><strong>Git</strong> es un sistema de control de versiones distribuido que permite a los desarrolladores gestionar y rastrear cambios en el código fuente de manera eficiente. Fue creado por Linus Torvalds en 2005 y es ampliamente utilizado en la industria del software para la colaboración en proyectos de desarrollo. <strong>GitHub</strong> es una plataforma en línea que permite alojar repositorios Git y facilita la colaboración entre desarrolladores. Ofrece herramientas para el control de versiones, gestión de proyectos y automatización de tareas mediante integraciones con otros servicios.</p>
+<p><strong>Comandos esenciales de Git:</strong></p>
+<p><strong>git init:</strong> Inicializa un repositorio Git en un directorio.</p>
+<p><strong>git clone</strong> URL_DEL_REPOSITORIO: Clona un repositorio existente desde una URL.</p>
+<p><strong>git status:</strong> Muestra el estado de los archivos en el repositorio.</p>
+<p><strong>git add</strong> nombre_archivo: Agrega un archivo específico al área de preparación.</p>
+<p><strong>git add .:</strong> Agrega todos los archivos modificados al área de preparación.</p>
+<p><strong>git commit -m</strong> &ldquo;Mensaje descriptivo del cambio&rdquo;: Guarda los cambios en el historial con un mensaje descriptivo.</p>
+<p><strong>git log:</strong> Muestra el historial de cambios en el repositorio.</p>
+<p><strong>git pull origin main:</strong> Actualiza el repositorio local con los cambios remotos.</p>
+<p><strong>git push origin main:</strong> Envía los cambios confirmados al repositorio remoto.</p>
+<h2 id="michi"><img src="image.png" alt="michi"></h2>
+<h2 id="tercera-sesión">Tercera sesión</h2>
+<h3 id="combinar-los-conocimientos-de-markdown-y-git-para-generar-páginas-estáticas-con-hugo-y-github-actions-añadir-al-reporte-que-es-hugo-y-github-actions-como-crear-un-sitio-estático-en-hugo-como-suben-esta-información-a-github-como-configurar-github-actions-para-publicar-el-sitio-en-github-pages">Combinar los conocimientos de Markdown y Git para generar páginas estáticas con Hugo y GitHub Actions. Añadir al reporte que es Hugo y Github Actions, como crear un sitio estático en hugo, como suben esta información a Github, como configurar Github Actions para publicar el sitio en Github Pages.</h3>
+<p>En esta sesión, aprendimos a utilizar Hugo para la creación de nuestra página web, empleando el tema Ananke. En este sitio, publicaremos todas nuestras prácticas y reportes. Para optimizar su gestión, implementamos GitHub Actions, lo que nos permite automatizar el proceso y realizar un seguimiento de las diferentes versiones de la página.</p>
+<p><img src="image-1.png" alt="Hugo.io"></p>
+<h3 id="enlaces">Enlaces</h3>
+<p><a href="https://github.com/nidoco/PortafolioParadigmas">Mi repositorio</a>
+<a href="https://nidoco.github.io/PortafolioParadigmas/">Pagina estatica</a></p></div>
+                <summary class="read-more-btn" onclick="toggleReadMore('post-2')" style="display: inline;">Leer más</summary>
+                
+            </div>
+            
+        </article>
+    
+        <article id="post-3">
+            <h2><a href="/pr%C3%A1ctica-3-aplicaci%C3%B3n-todo-en-haskell/">Práctica 3: Aplicación TODO en Haskell</a></h2>
+            
+            tags:
+            
+            <a href="/tags/haskell">haskell</a>
+            
+            <div class="post-header">
+                @Jennifer Salgado <span class="timestamp">23/02/2025</span>
+            </div>
+            <p><h1 id="práctica-3">Práctica 3</h1>
+<h2 id="paradigmas-de-programación">Paradigmas de Programación</h2>
+<h2 id="introducción">Introducción</h2>
+<p>En este informe de práctica se detallará el proceso de creación de una aplicación de consola destinada a la gestión de listas de tareas (TODO list), desarrollada con el lenguaje de programación funcional <strong>Haskell</strong>. El propósito central fue adquirir conocimientos y familiarizarse con los principios básicos de Haskell, su sintaxis, el manejo de operaciones de entrada y salida, la manipulación de listas y el uso de herramientas como <strong>Stack</strong>. Esta actividad se llevó a cabo mediante la adaptación y el análisis de tutoriales y ejemplos existentes, con el fin de construir la aplicación de manera progresiva.</p></p>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="text-content"><h2 id="descripción-de-la-aplicación">Descripción de la aplicación</h2>
+<p>La aplicación desarrollada permite a los usuarios gestionar una lista de tareas pendientes …</p></div>
+                <div class="full-content" style="display: none;"><h2 id="descripción-de-la-aplicación">Descripción de la aplicación</h2>
+<p>La aplicación desarrollada permite a los usuarios gestionar una lista de tareas pendientes mediante una interfaz basada en la línea de comandos. Ofrece funciones esenciales como la creación, visualización, edición y eliminación de tareas.</p>
+<p>Entre los comandos principales que admite la aplicación se encuentran:</p>
+<ul>
+<li>Añadir tarea (<strong>+ texto_tarea</strong>):  Incorpora una nueva tarea a la lista.</li>
+<li>Listas tareas (<strong>l</strong>): Muestra todas las tareas pendientes, cada una identificada con un número de índice.</li>
+<li>Eliminar tarea (<strong>- índice</strong>): Suprime la tarea que corresponde al índice especificado.</li>
+<li>Editar tarea (<strong>e índice</strong>): Permite modificar el contenido de una tarea existente.</li>
+<li>Mostrar tarea (<strong>s índice</strong>): Muestra en pantalla una tarea específica.</li>
+<li>Limpiar lista (<strong>c</strong>): Elimina todas las tareas registradas en la lista.</li>
+<li>Salir (<strong>q</strong>): Finaliza la ejecución del programa.</li>
+</ul>
+<h2 id="haskell-y-stack-entorno-de-desarrollo">Haskell y Stack: Entorno de desarrollo</h2>
+<p><strong>Haskell</strong> es un lenguaje de programación puramente funcional. En el desarrollo de este proyecto se utilizó el compliador GHC (Glasgow Haskell Compiler), y se recurrió a <strong>Stack</strong> como herramientas principal para la gestión del proyecto, Stack permite crear proyectos de manera sencilla, gestionar sus dependencias , compilar y ejecutar el código, todo dentro de un entorno de desarrollo controlado. Además, garantiza la consistencia del entorno a encargarse de la instalación del compilador GHC y las bibliotecas necesarias de forma aislada para cada proyecto.</p>
+<h4 id="1-creación-del-proyecto">1. Creación del proyecto</h4>
+<p>El proyecto se inició en Haskell mediante el uso de Stack con el siguiente comando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>stack new MiProyectoTodo
+</span></span><span style="display:flex;"><span>cd MiProyectoTodo
+</span></span></code></pre></div><h4 id="2-estructura-del-proyecto">2. Estructura del proyecto</h4>
+<p>La estructura generada por Stack organiza el código fuente, los archivos de prueba y la configuración del entorno de manera ordenada. Los elementos más relevantes para el desarrollo de esta práctica fueron:</p>
+<ul>
+<li><code>app/Main.hs</code>: Archivo que contiene el punto de entrada principal de la aplicación.</li>
+<li><code>src/ </code>: Directorio destinado a los módulos de la biblioteca. En este poyecto, se creó el archivo <strong>Crud.hs</strong> para implementar la lógica de la aplicación.</li>
+<li><code>test./Spec.hs</code>: Archivo reservado para la creación de prueba unitarias.</li>
+<li><code>package.yaml</code>: Archivo de configuración de paquete. A partir de este, Stack genera el archivo <code>.cabal</code> automáticamente.</li>
+<li><code>stack.yaml</code>: Archivo de configuración específico de Stack que define el entorno y las dependencias del proyecto.</li>
+</ul>
+<h2 id="implementación-de-funcionalidades-clave">Implementación de funcionalidades clave</h2>
+<p>La lógica principal de la aplicación se concentró en el módulo <code>Crud.hs</code>, mientras que el archivo <code>Main.hs</code> actuó como punto de entrada para iniciar la ejecución.</p>
+<h4 id="1-módulo-principal-de-lógica-crudhs">1. Módulo principal de lógica (<code>Crud.hs</code>)</h4>
+<p>Este módulo encapsula las funciones responsables de manejar el estado de la lista de tareas (representada como una lista de cadenas, <code>[string]</code>), así como la interacción con el usuario.</p>
+<h4 id="2-bucle-de-interacción-y-procesamiento-de-comandos">2. Bucle de interacción y procesamiento de comandos</h4>
+<p>La función principal <code>prompt</code>, definida en <code>Crud.hs</code>, controla el ciclo de vida de la aplicación. Su funcionamiento se basa en los siguientes pasos:</p>
+<ul>
+<li>Muestra un mensaje solicitando al usuario que ingrese un comando.</li>
+<li>Lee y procesa la entrada de usuario.</li>
+<li>Transfiere la interpretación del comando a una función llamada <code>interpret</code>.</li>
+<li>Llamada a sí misma recursivamente con la lista de tareas actualizada, repitiendo el proceso hasta que el usuario ingresa el comando <code>'q'</code> para salir.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#75715e">-- Ejemplo simplificado del bucle en Crud.hs</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> Crud (<span style="color:#a6e22e">prompt</span>) <span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> System.IO (<span style="color:#a6e22e">hFlush</span>, <span style="color:#a6e22e">stdout</span>) <span style="color:#75715e">-- Para flush de salida</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#66d9ef">Tarea</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">String</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#66d9ef">ListaTareas</span> <span style="color:#f92672">=</span> [<span style="color:#66d9ef">Tarea</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">prompt</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">ListaTareas</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">prompt</span> tareas <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    putStr <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Comandos (+, l, e, -, c, q): &#34;</span>
+</span></span><span style="display:flex;"><span>    hFlush stdout <span style="color:#75715e">-- Asegura que el prompt se muestre antes de getLine</span>
+</span></span><span style="display:flex;"><span>    comando <span style="color:#f92672">&lt;-</span> getLine
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> comando <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;q&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">then</span> putStrLn <span style="color:#e6db74">&#34;Adiós!&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> procesarComando comando tareas
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">procesarComando</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">ListaTareas</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">procesarComando</span> cmd tareas <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- Aquí iría la lógica para interpretar &#39;cmd&#39; y actualizar &#39;tareas&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- Por ejemplo:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> nuevasTareas <span style="color:#f92672">=</span> <span style="color:#66d9ef">case</span> cmd <span style="color:#66d9ef">of</span>
+</span></span><span style="display:flex;"><span>                         (<span style="color:#e6db74">&#39;+&#39;</span> <span style="color:#66d9ef">:</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#66d9ef">:</span> desc) <span style="color:#f92672">-&gt;</span> desc <span style="color:#66d9ef">:</span> tareas <span style="color:#75715e">-- Añadir</span>
+</span></span><span style="display:flex;"><span>                         <span style="color:#e6db74">&#34;l&#34;</span> <span style="color:#f92672">-&gt;</span> tareas <span style="color:#75715e">-- Listar no cambia la lista aquí</span>
+</span></span><span style="display:flex;"><span>                         <span style="color:#66d9ef">_</span><span style="color:#f92672">-&gt;</span> tareas <span style="color:#75715e">-- Comando no reconocido</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> cmd <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;l&#34;</span> <span style="color:#66d9ef">then</span> imprimirTareas nuevasTareas <span style="color:#66d9ef">else</span> return ()
+</span></span><span style="display:flex;"><span>    prompt nuevasTareas <span style="color:#75715e">-- Llamada recursiva</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">imprimirTareas</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">ListaTareas</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">imprimirTareas</span> ts <span style="color:#f92672">=</span> mapM_ putStrLn <span style="color:#f92672">$</span> zipWith (<span style="color:#a6e22e">\</span>n t <span style="color:#f92672">-&gt;</span> show n <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34;. &#34;</span> <span style="color:#f92672">++</span> t) [<span style="color:#ae81ff">0</span><span style="color:#f92672">..</span>] ts
+</span></span></code></pre></div><h4 id="3-gestión-de-tareas-añadir-listar-eliminar-editar">3. Gestión de tareas (Añadir, Listar, Eliminar, Editar)</h4>
+<ul>
+<li><strong>Añadir</strong>: Se implementó un patrón específico para detectar entradas con el formato <code>+ tarea</code> utilizando la coincidencia de patrón <code>'+': ' ':task</code>. Esto permite agregar la nueva tarea al inicio de la lista de tareas.</li>
+<li><strong>Listar</strong>: Para mostrar todas las tareas con sus respectivos índices, se utilizó la función <code>zip</code> para emparejar cada tarea con un número consecutivo. Luego, se empleó <code>mapM_</code> para recorrer e imprimir cada par (índice, tarea) en la consola.</li>
+<li><strong>Eliminar</strong>: Este comando requiere convertir la entrada del índice, que es una cadena (<code>string</code>), a un número entero (<code>int</code>). Para ello, se usó <code>readMaybe</code>, lo que añade seguridad al evitar errores por entradas no numéricas. Una vez validando el índice, se utilizó una función auxiliar que elimina el elemento correspondiente de la lista.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#75715e">-- Ejemplo simplificado de función para eliminar</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">eliminarTarea</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">ListaTareas</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Maybe</span> <span style="color:#66d9ef">ListaTareas</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">eliminarTarea</span> idx tareas
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">|</span> idx <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> idx <span style="color:#f92672">&gt;=</span> length tareas <span style="color:#f92672">=</span> <span style="color:#66d9ef">Nothing</span> <span style="color:#75715e">-- Índice inválido</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">|</span> otherwise <span style="color:#f92672">=</span> <span style="color:#66d9ef">Just</span> (take idx tareas <span style="color:#f92672">++</span> drop (idx <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) tareas)
+</span></span></code></pre></div><ul>
+<li><strong>Editar</strong>: Similar a eliminar, se valida el índice y se remplaza la tarea correspondiente con una nueva entrada proporcionada por el usuario.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#75715e">-- Ejemplo simplificado de función para editar</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">editarTarea</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">Int</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">ListaTareas</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Maybe</span> <span style="color:#66d9ef">ListaTareas</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">editarTarea</span> idx nuevoTexto tareas
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">|</span> idx <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">||</span> idx <span style="color:#f92672">&gt;=</span> length tareas <span style="color:#f92672">=</span> <span style="color:#66d9ef">Nothing</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">|</span> otherwise <span style="color:#f92672">=</span> <span style="color:#66d9ef">Just</span> (take idx tareas <span style="color:#f92672">++</span> [nuevoTexto] <span style="color:#f92672">++</span> drop (idx <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) tareas)
+</span></span></code></pre></div><ul>
+<li>El manejo de <code>Maybe</code> es necesario para las operaciones que podrían fallar.</li>
+</ul>
+<h4 id="4-punto-de-entrada-de-la-aplicación-mainhs">4. Punto de entrada de la aplicación (<code>Main.hs</code>)</h4>
+<p>El archivo <code>app/Main.hs</code> actúa como punto de entrada para la ejecución de la aplicación. En él, se importa la función <code>prompt</code> desde el módulo <code>Crud.hs</code> y se invoca con una lista de tareas vacía (<code>[]</code>). Además, muestra un mensaje de bienvenida al usuario antes de iniciar la interacción, dando comienzo al ciclo de comandos para la gestión de tareas.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#75715e">-- Ejemplo simplificado de Main.hs</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">module</span> Main <span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> Crud (<span style="color:#a6e22e">prompt</span>) <span style="color:#75715e">-- Asumiendo que Crud.hs está en src/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">main</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">main</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;--- Aplicación TODO en Haskell ---&#34;</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;Comandos disponibles: + tarea, l, e idx, - idx, s idx, c, q&#34;</span>
+</span></span><span style="display:flex;"><span>    prompt <span style="color:#66d9ef">[]</span> <span style="color:#75715e">-- Iniciar con lista vacía</span>
+</span></span></code></pre></div><h2 id="pruebas-unitarias">Pruebas Unitarias</h2>
+<p>El archivo <code>test/Spec.hs</code> se empleó para realizar pruebas a las funciones puras del proyecto, especialmente aquellas relacionadas con la manipulación de listas, como <code>eliminarTarea</code> y <code>editarTarea</code>. Estas pruebas se diseñaron para verificar que las funciones respondan correctamente tanto a entradas válidas como inválidas, asegurando así su correcto funcionamiento y la robustez del código ante posibles errores de uso.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-haskell" data-lang="haskell"><span style="display:flex;"><span><span style="color:#75715e">-- Ejemplo simplificado de una prueba en Spec.hs</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> Control.Exception (<span style="color:#a6e22e">assert</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- import Lib (editarTarea)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Función de prueba para editarTarea</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">testEdicion</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">testEdicion</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> listaInicial <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;comprar pan&#34;</span>, <span style="color:#e6db74">&#34;estudiar Haskell&#34;</span>]
+</span></span><span style="display:flex;"><span>        resultadoEsperado <span style="color:#f92672">=</span> <span style="color:#66d9ef">Just</span> [<span style="color:#e6db74">&#34;comprar leche&#34;</span>, <span style="color:#e6db74">&#34;estudiar Haskell&#34;</span>]
+</span></span><span style="display:flex;"><span>        resultadoReal <span style="color:#f92672">=</span> editarTarea <span style="color:#ae81ff">0</span> <span style="color:#e6db74">&#34;comprar leche&#34;</span> listaInicial <span style="color:#75715e">-- Usando una función hipotética</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">in</span> assert (resultadoReal <span style="color:#f92672">==</span> resultadoEsperado) (putStrLn <span style="color:#e6db74">&#34;Prueba de edición: PASSED&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">main</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">IO</span> ()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">main</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;Ejecutando conjunto de pruebas...&#34;</span>
+</span></span><span style="display:flex;"><span>    testEdicion
+</span></span><span style="display:flex;"><span>    putStrLn <span style="color:#e6db74">&#34;Pruebas finalizadas.&#34;</span>
+</span></span></code></pre></div><h2 id="compliación-y-ejecución">Compliación y ejecución</h2>
+<p>La compliación del proyecto se lleva a cabo mediante el siguiente comando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>stack build
+</span></span></code></pre></div><p>Para ejecutar la aplicación, se puede utilizar:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>stack exec MiProyectoTodo-exe
+</span></span></code></pre></div><p>O bien, ejecutar y compilar de forma combinada con:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>stack run
+</span></span></code></pre></div><p>Y para ejecutar las pruebas unitarias definidas en  <code>text/Spec.hs</code>, se utiliza:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>stack test
+</span></span></code></pre></div><h2 id="conclusión">Conclusión</h2>
+<p>Esta práctica resultó para adquirir una comprensión básica pero sólida de Haskell y su ecosistema. A través del desarrollo de una aplicación TODO, aunque sencilla, se logró explorar conceptos clave del lenguaje funcional. Algunas complicaciones que tuve fueron las limitaciones técnicas como el almacenamiento disponible, lo que exigió soluciones creativas dento de los recursos disponibles.</p>
+<p>Haskell proporciona una forma distinta de abordar problemas, y aunque su curva de aprendizaje inicial puede ser pronunciada, las ventajas que ofrece en términos de expresividad y robustez del código son notables. La experiencia obtenida, aunque introductoria, establece una base firme para continuar profundizando en el paradigma de la programación funcional en el futuro.</p>
+<p><a href="https://github.com/nidoco/PortafolioParadigmas">──୨ৎ──Repositorio
+──୨ৎ──</a></p>
+<p><a href="https://nidoco.github.io/PortafolioParadigmas/">≽^- ˕ -^≼</a></p></div>
+                <summary class="read-more-btn" onclick="toggleReadMore('post-3')" style="display: inline;">Leer más</summary>
+                
+            </div>
+            
+        </article>
+    
+        <article id="post-4">
+            <h2><a href="/practica1/">Practica1</a></h2>
+            
+            tags:
+            
+            <div class="post-header">
+                @ <span class="timestamp">21/02/2025</span>
+            </div>
+            <p></p>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="full-content"></div>
+                
+            </div>
+            
+        </article>
+    
+    
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
 
-    </div>
-  
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
 
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleReadMore(id) {
+        var post = document.getElementById(id)
+        var fullContent = post.getElementsByClassName("full-content")[0];
+        var btnText = post.getElementsByClassName("read-more-btn")[0];
+        var textContent = post.getElementsByClassName("text-content")[0];
+
+        if (fullContent.style.display === "none") {
+            textContent.style.display = "none";
+            fullContent.style.display = "inline";
+            btnText.innerHTML = "Leer menos";
+        } else {
+            textContent.style.display = "inline";
+            fullContent.style.display = "none";
+            btnText.innerHTML = "Leer más";
+        }
+    }
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
     </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
-    &copy;  My New Hugo Site 2025 
-  </a>
-    <div><div class="ananke-socials"></div>
-</div>
-  </div>
-</footer>
 
-  </body>
+    
+</main>
+</body>
 </html>

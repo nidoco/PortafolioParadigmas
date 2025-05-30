@@ -1,9 +1,11 @@
-+++
-date = '2025-02-21T10:18:14-08:00'
-draft = false
-title = 'Practica 0: Markdown, Git & Hugo'
-summary = "Jennifer Salgado Pacheco"
-+++
+---
+title: "Práctica 0: Markdown, Git y Hugo"
+date: 2025-03-11T08:44:00-08:00  # Formato YYYY-MM-DD
+draft: false
+tags: [Markdown, Git y Hugo]
+author: "Jennifer Salgado"
+---
+
 # Primera sesión
 ## Sintaxis y usode markdown. Crear un reporte de qué es Markdown, cómo se utiliza y su sintaxis
 ## Introducción

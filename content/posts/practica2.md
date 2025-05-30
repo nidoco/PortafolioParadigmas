@@ -1,9 +1,11 @@
-+++
-date = '2025-02-21T10:19:41-08:00'
-draft = false
-title = 'Practica 2'
-summary = "Jennifer Salgado Pacheco"
-+++
+---
+title: "Práctica 2: Análisis de código"
+date: 2025-03-30T10:19:41-08:00  # Formato YYYY-MM-DD
+draft: false
+author: "Jennifer Salgado"
+tags: [Python]
+---
+
 # Práctica 2
 ## Paradigmas de programación
 El objetivo de esta práctica es explicar de manera detallada cómo funciona el programa.

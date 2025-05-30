@@ -1,6 +1,22 @@
-baseURL = 'https://nidoco.github.io/PortafolioParadigmas/'
-languageCode = 'en-us'
+baseURL = 'http://localhost:1313/'  # Para desarrollo
+languageCode = 'es-es'
 title = 'Portafolio Paradigmas'
-theme = 'ananke'
+theme = "neopost"
+
+[permalinks]
+    posts = "/:slug/"
+
 [params]
-    showSummary = false
+    theme = "light-blue"
+    favicon = "/favicon.ico"
+    posts-per-page = 5
+    toc-auto-numbering = false
+    
+    [params.read-more]
+        length-limit = 120  # Número de caracteres para mostrar "Leer más"
+        [params.read-more.text]
+            more = "Leer más"
+            less = "Leer menos"
+
+[outputs]
+    home = ["HTML", "RSS"]

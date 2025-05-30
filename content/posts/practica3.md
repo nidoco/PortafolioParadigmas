@@ -1,9 +1,11 @@
-+++
-date = '2025-02-21T10:19:46-08:00'
-draft = false
-title = 'Practica 3: Aplicación TODO en Haskell'
-summary = "Jennifer Salgado Pacheco"
-+++
+---
+title: "Práctica 3: Aplicación TODO en Haskell"
+date: 2025-02-23  # Formato YYYY-MM-DD
+draft: false
+author: "Jennifer Salgado"
+tags: [haskell]
+---
+
 # Práctica 3
 ## Paradigmas de Programación
 
